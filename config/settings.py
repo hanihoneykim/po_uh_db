@@ -147,3 +147,18 @@ AUTH_USER_MODEL = "user.User"
 # CORS Control
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = ("http://localhost:8080",)
+
+
+# Rest Framework Authentication Classes
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "config.authentication.TokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ),
+    "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
+    "DEFAULT_PARSER_CLASSES": (
+        "rest_framework.parsers.JSONParser",
+        "rest_framework.parsers.MultiPartParser",
+        "rest_framework.parsers.FormParser",
+    ),
+}
