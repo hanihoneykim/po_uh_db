@@ -7,8 +7,11 @@ from django.contrib.auth.models import (
     BaseUserManager,
     PermissionsMixin,
 )
+from common.models import CommonModel
 
-# from common.models import CommonModel
+
+def generate_hex(nbytes=32):
+    return secrets.token_hex(nbytes)
 
 
 class UserManager(BaseUserManager):
@@ -54,3 +57,8 @@ class User(AbstractBaseUser, PermissionsMixin):
             self.email = self.email.lower().strip()
 
         super().save(*args, **kwargs)
+
+
+class AuthToken(CommonModel):
+    id = models.CharField(default=generate_hex, max_length=64, primary_key=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
