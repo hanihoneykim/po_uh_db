@@ -9,7 +9,7 @@
         <meta name="author" content="" />
         <title>UH Admin</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         
@@ -27,6 +27,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js" integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
+        <!--  data tables jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!-- DataTables CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        
+        <!-- DataTables JavaScript -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+        
+        <!-- DataTables Korean language file -->
+        <script src="https://cdn.datatables.net/plug-ins/1.11.5/i18n/Korean.json"></script>
         
 
         <script>
@@ -58,7 +69,7 @@
                 };
 
                 // DataTable initialization with language settings
-                $('#datatablesSimple').DataTable({
+                $('#dataTables').DataTable({
                     "language": lang_kor
                 });
             });
@@ -225,7 +236,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="{% static 'assets/demo/chart-area-demo.js' %}"></script>
         <script src="{% static 'assets/demo/chart-bar-demo.js' %}""></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="{% static 'js/datatables-simple-demo.js' %}"></script>
     </body>
 </html>
