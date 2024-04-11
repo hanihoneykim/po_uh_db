@@ -1,0 +1,226 @@
+{% extends 'common.html' %}
+{% block content %}
+    <div id="layoutSidenav_content" style="width: 100%;">
+        <main>
+            <div class="container-fluid px-4">
+                <h2 class="mt-4">
+                    {% if request.path == '/the-myeongdong/reservations/register' %}
+                        명동점 예약 등록
+                    {% elif request.path == '/the-jongno/reservations/register' %}
+                        종로점 예약 등록
+                    {% else %}
+                        예약 등록
+                    {% endif %}
+                </h2>
+                <div class="row justify-content-center mt-5" style="margin-bottom:100px;">
+                    <div class="col-lg-6">
+                        <div class="card mb-5 mt-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas fa-table me-1"></i>
+                                    {% if request.path == '/the-myeongdong/reservations/register' %}
+                                        명동점 예약 등록
+                                    {% elif request.path == '/the-jongno/reservations/register' %}
+                                        종로점 예약 등록
+                                    {% else %}
+                                        예약 등록
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 57px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    본관
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                    <a class="dropdown-item" href="#">본관</a>
+                                                    <a class="dropdown-item" href="#">신관</a>
+                                                    <a class="dropdown-item" href="#">별관</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 57px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    패밀리스위트
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                    <a class="dropdown-item" href="#">패밀리스위트</a>
+                                                    <a class="dropdown-item" href="#">8인 패밀리 스위트</a>
+                                                    <a class="dropdown-item" href="#">씨네마</a>
+                                                    <a class="dropdown-item" href="#">2인스파</a>
+                                                    <a class="dropdown-item" href="#">4인스파</a>
+                                                    <a class="dropdown-item" href="#">2인스파 스위트</a>
+                                                    <a class="dropdown-item" href="#">4인스파 스위트</a>
+                                                    <a class="dropdown-item" href="#">6인스파 스위트</a>
+                                                    <a class="dropdown-item" href="#">6인스파 401</a>
+                                                    <a class="dropdown-item" href="#">6인스파 402</a>
+                                                    <a class="dropdown-item" href="#">8층</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                                            <label for="inputLastName">예약자 성함</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 57px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                플랫폼
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                <a class="dropdown-item" href="#">아고다</a>
+                                                <a class="dropdown-item" href="#">야놀자</a>
+                                                <a class="dropdown-item" href="#">비앤비</a>
+                                                <a class="dropdown-item" href="#">네이버</a>
+                                                <a class="dropdown-item" href="#">씨트립</a>
+                                                <a class="dropdown-item" href="#">익스피디아</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="reservationDate" class="form-control">
+                                                <label for="reservationDate"><i class="fas fa-calendar-days mr-2"></i>예약 날짜</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 57px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    투숙 여부
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                    <a class="dropdown-item" href="#">방문 전</a>
+                                                    <a class="dropdown-item" href="#">투숙</a>
+                                                    <a class="dropdown-item" href="#">취소</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="checkInDate" class="form-control">
+                                                <label for="checkInDate"><i class="fas fa-calendar-days mr-2"></i>체크인 날짜</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="checkOutDate" class="form-control">
+                                                <label for="checkOutDate"><i class="fas fa-calendar-days mr-2"></i>체크아웃 날짜</label>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputRate" type="text" placeholder="금액을 숫자만 입력해 주세요" oninput="formatAccommodationFee(this)"/>
+                                                <label for="inputRate">숙박비</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputNationality" type="text" placeholder="국적" />
+                                                <label for="inputNationality">국적</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputGuests" type="text" placeholder="투숙인원"/>
+                                                <label for="inputGuests">투숙인원</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputRelationship" type="text" placeholder="관계" />
+                                                <label for="inputRelationship">관계</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputPhoneNumber" type="text" placeholder="연락처"/>
+                                                <label for="inputPhoneNumber">연락처</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputEmail" type="text" placeholder="이메일" />
+                                                <label for="inputEmail">이메일</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <textarea class="form-control" id="inputGuests" placeholder="비고" style="height: 200px;"></textarea>
+                                                <label for="inputGuests">비고</label>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+
+
+                                    <div class="mt-4 mb-0">
+                                        <div class="d-grid"><a class="btn btn-dark btn-block" href="login.html">예약 저장하기</a></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#reservationDate').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkInDate').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkOutDate').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+</script>
+<script>
+    function formatAccommodationFee(input) {
+        // 입력값에서 쉼표를 제거하고 숫자만 남깁니다.
+        let value = input.value.replace(/[^0-9]/g, '');
+        // 숫자를 오른쪽에서부터 왼쪽으로 3자리씩 쉼표로 구분합니다.
+        value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        // 포맷팅된 값으로 입력 필드의 값을 업데이트합니다.
+        input.value = value;
+    }
+</script>
+{% endblock %}
