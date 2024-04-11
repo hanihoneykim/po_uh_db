@@ -22,6 +22,12 @@ class MyeongdongReservation(models.Model):
         ("8th_floor", "8층"),
     ]
 
+    IS_CHECKED_IN_CHOICES = [
+        ("checked_in", "투숙"),
+        ("cancel", "취소"),
+        ("before_check_in", "방문전"),
+    ]
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, null=False, blank=False)
     building_location = models.CharField(
         max_length=20, choices=BUILDING_CHOICES, blank=True, null=True
@@ -41,6 +47,10 @@ class MyeongdongReservation(models.Model):
     nationality = models.CharField(max_length=20, null=True, blank=True)
     guest_count = models.IntegerField(null=True, blank=True)
     relationship = models.CharField(max_length=10, null=True, blank=True)
+    is_checked_in = models.CharField(
+        max_length=30, choices=IS_CHECKED_IN_CHOICES, blank=True, null=True
+    )
+    is_minor = models.IntegerField(null=True, blank=True)
     phone_number = models.CharField(max_length=20, null=True, blank=True)
     email = models.CharField(max_length=30, null=True, blank=True)
     remarks = models.TextField(null=True, blank=True)
