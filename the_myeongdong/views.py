@@ -11,7 +11,7 @@ def Main(request):
 
 def reservation(request):
     context = {}
-    return render(request, "pages/get_reservation.html", context)
+    return render(request, "pages/myeongdong_reservation.html", context)
 
 
 def register(request):
