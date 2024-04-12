@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db.models import Q
 from datetime import date, datetime
 from rest_framework import generics, status
 from django.core.paginator import Paginator
@@ -39,6 +40,18 @@ class ReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
 
     def get(self, request, pk):
         reservation = MyeongdongReservation.objects.get(pk=pk)
+
+        # guest_name, phone_number, email 중에서 2개 이상이 같은 예약들을 필터링합니다.
+        again_guest = MyeongdongReservation.objects.filter(
+            Q(guest_name=reservation.guest_name)
+            | Q(phone_number=reservation.phone_number)
+            | Q(email=reservation.email)
+        ).exclude(
+            pk=pk
+        )  # 현재 조회중인 예약은 제외합니다.
+
         return render(
-            request, "pages/myeongdong_detail.html", {"reservation": reservation}
+            request,
+            "pages/myeongdong_detail.html",
+            {"reservation": reservation, "again_guest": again_guest},
         )

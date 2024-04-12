@@ -103,7 +103,34 @@
                             재방문 정보
                         </div>
                         <div class="card-body">
-                            <!-- 카드 내용 -->
+                            <div style="overflow-x: auto;">
+                                <div class="table-responsive my-4">
+                                    <table class="table table-bordered display" id="dataTables" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th style="white-space: nowrap;">예약자 성함</th>
+                                                <th style="white-space: nowrap;">연락처</th>
+                                                <th style="white-space: nowrap;">예약날짜</th>
+                                                <th style="white-space: nowrap;">체크인</th>
+                                                <th style="white-space: nowrap;">체크아웃</th>
+                                                <th style="white-space: nowrap;">국적</th>
+                                                <th style="white-space: nowrap;">이메일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="cursor: pointer;" id="againGuest" data-toggle="modal" data-target="#Modal">
+                                                <td style="white-space: nowrap;">Tong Janic Yan Yu</td>
+                                                <td style="white-space: nowrap;">52 9833 2469</td>
+                                                <td style="white-space: nowrap;">2024년 1월 30일</td>
+                                                <td style="white-space: nowrap;">2024년 2월 14일</td>
+                                                <td style="white-space: nowrap;">2024년 2월 16일</td>
+                                                <td style="white-space: nowrap;">홍콩</td>
+                                                <td style="white-space: nowrap;">0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,6 +138,52 @@
         </div>
     </main>
 
+<!-- jameKim 모달 -->
+<div id="Modal" class="modal fade">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div style="padding:10px; font-size: 15px;">
+                    <span style="margin-bottom: 30px;">건물: 별관</span><br>
+                    <span class="mb-5">방타입: 패밀리 스위트</span><br>
+                    <span class="mb-5">예약자 성함: Tong Janic Yan Yu</span><br>
+                    <span class="mb-5">플랫폼: 아고다</span><br>
+                    <span class="mb-5">예약날짜: 2024년 1월 30일</span><br>
+                    <span class="mb-5">리드타임: -79.0</span><br>
+                    <span class="mb-5">체크인: 2024년 2월 14일</span><br>
+                    <span class="mb-5">체크아웃: 2024년 2월 26일</span><br>
+                    <span class="mb-5">숙박일: 2일</span><br>
+                    <span class="mb-5">숙박비: 1865840</span><br>
+                    <span class="mb-5">ADR: 3253409</span><br>
+                    <span class="mb-5">국적: 홍콩</span><br>
+                    <span class="mb-5">투숙인원: 2</span><br>
+                    <span class="mb-5">관계: 가족</span><br>
+                    <span class="mb-5">투숙/취소: 투숙</span><br>
+                    <span class="mb-5">연락처: 52 9833 2469</span><br>
+                    <span class="mb-5">이메일: 0</span><br>
+                    <span class="mb-5">비고:</span><br>
+                    <span class="mb-5">연락처: +46 737212197 / 스웨덴 8박 / 전체청소 1, 5 / 라이터 1개 대여 / 이불 1개 추가 15,000원 결제 필요 / 티오더 스낵 서비스 나초 세트 체크아웃시 결제요망 (10,000원)</span><br>
+                    <span class="mb-5">4/3 히노끼 카드 결제 완료.</span><br>
+                    <span class="mb-5">3/4 왓츠앱 통해 사전안내문 전송 완료. /2명 부부 /</span><br>
+                    <span class="mb-5">3/30 플라워 카드 완</span><br>
+                    <span class="mb-5">3/31 투숙하는 동안 계획있으시면 오늘 계획에 일부만이라도 추천도와드리겠다고 여쭤보았으나, 무시하심.</span><br>
+                    <span class="mb-5">4/1 한국에서 bbq레스토랑 추천도와드려도 괜찮은지 여쭤보고, 추천 해달라고 하셔서, 한국에서 가장맛있는 bbq 집으로 추천해드리겠다고 말씀드리고, '돈돼지 명동'안내해드림. 그리고 왓츠앱통해서 추천하는 메뉴 사진 보내드리고, 추천메뉴도 같이 안내 해드림. 감사하다고 이모티콘 보내주심.</span><br>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#Modal').on('hidden.bs.modal', function (e) {
+        $('body').removeClass('modal-open');
+        $('.modal-backdrop').remove();
+    });
+</script>
 
 
 {% endblock %}
