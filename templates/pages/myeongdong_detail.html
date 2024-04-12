@@ -1,0 +1,116 @@
+{% extends 'common.html' %}
+
+{% block content %}
+<div id="layoutSidenav_content" style="width: 100%;">
+    <main>
+        <div class="container-fluid px-4 mb-5">
+            <h2 class="mt-4">명동점 예약 상세보기</h2>
+            <div class="row mt-4 mb-5">
+                <div class="col-md-6">
+                    <!-- 첫 번째 카드 -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            예약 상세보기
+                        </div>
+                        <div class="card-body row">
+                            <div class="col-md-3">
+                                <!-- 항목 부분 -->
+                                <div style="text-align: right;">
+                                    <p style="font-size: 15px; height: 25px;">건물 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">방타입 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">예약자 성함 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">플랫폼 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">예약날짜 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">리드타임 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">체크인 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">체크아웃 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">숙박일 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">숙박비 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">ADR :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">국적 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">투숙인원 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">관계 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">투숙/취소 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">연락처 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">이메일 :</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">비고 :</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <!-- 인풋 부분 -->
+                                <div>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.building_location|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.room_type|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.guest_name|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.platform_name|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.reservation_date|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.lead_time|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.check_in_date|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.check_out_date|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.lenth_of_stay|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px;">{{ reservation.total_room_charge|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.adr|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.nationality|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.guest_count|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.relationship|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.is_checked_in|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.phone_number|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px; height: 25px;">{{ reservation.email|default:'' }}</p>
+                                    <hr>
+                                    <p style="font-size: 15px;">{{ reservation.remarks|default:'' }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- 두 번째 카드 -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            재방문 정보
+                        </div>
+                        <div class="card-body">
+                            <!-- 카드 내용 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}
