@@ -63,6 +63,7 @@ EXTERNAL_APPS = [
 
 INTERNAL_APPS = [
     "user",
+    "core",
     "the_myeongdong",
     "the_seoul",
     "the_gwanghwamun",

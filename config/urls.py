@@ -20,15 +20,14 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from user.views import UserLogin
-from the_myeongdong.views import Main
+
 
 # from user.views import UserLogin
 
 
 urlpatterns = [
     path("dj-admin/", admin.site.urls),
+    path("", include("core.urls")),
     path("user/", include("user.urls")),
     path("the-myeongdong/", include("the_myeongdong.urls")),
-    path("", UserLogin.as_view(), name="login"),
-    path("main", Main, name="main"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
