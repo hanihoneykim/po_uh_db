@@ -24,5 +24,7 @@ class ReservationListView(generics.ListCreateAPIView):
     template_name = "pages/myeongdong_reservation.html"
 
     def get(self, request):
-        # reservations = MyeongdongReservation.objects.all()
-        return render(request, "pages/myeongdong_reservation.html")
+        reservations = MyeongdongReservation.objects.all()
+        return render(
+            request, "pages/myeongdong_reservation.html", {"reservations": reservations}
+        )
