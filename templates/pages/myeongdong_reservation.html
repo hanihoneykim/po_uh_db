@@ -210,6 +210,7 @@
                                                     <th style="white-space: nowrap;">투숙인원</th>
                                                     <th style="white-space: nowrap;">관계</th>
                                                     <th style="white-space: nowrap;">투숙/취소</th>
+                                                    <th style="white-space: nowrap;">미성년자</th>
                                                     <th style="white-space: nowrap;">연락처</th>
                                                     <th style="white-space: nowrap;">이메일</th>
                                                     <th style="white-space: nowrap;">비고</th>
@@ -217,7 +218,7 @@
                                             </thead>
                                             <tbody>
                                                 {% for item in reservations %}
-                                                    <tr>
+                                                    <tr onclick="window.location='/the-myeongdong/reservations/{{ item.id }}';" style="cursor: pointer;">
                                                         <td style="white-space: nowrap;">{{ item.building_location }}</td>
                                                         <td style="white-space: nowrap;">{{ item.room_type }}</td>
                                                         <td style="white-space: nowrap;">{{ item.guest_name }}</td>
@@ -230,6 +231,7 @@
                                                         <td style="white-space: nowrap;">{{ item.total_room_charge }}</td>
                                                         <td style="white-space: nowrap;">{{ item.adr}}</td>
                                                         <td style="white-space: nowrap;">{{ item.nationality }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.guest_count }}</td>
                                                         <td style="white-space: nowrap;">{{ item.relationship }}</td>
                                                         <td style="white-space: nowrap;">{{ item.is_checked_in }}</td>
                                                         <td style="white-space: nowrap;">{{ item.is_minor }}</td>
