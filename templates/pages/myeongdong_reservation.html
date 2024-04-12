@@ -15,23 +15,163 @@
 
                         <!-- 상세조회 -->
                         <div class="row mt-5">
-                            <div class="accordion" id="accordionExample" style="width: 100%;">
+                            <div class="accordion" id="accordionExample" style="width: 99.5%; margin-left: 5px">
                                 <div class="card">
-                                    <div class="card-header d-flex align-items-center" id="headingOne" style="height: 50px;">
-                                        <h2>
-                                            <button class="btn btn-link btn-block text-left text-dark mt-1 text-decoration-none"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <span><i class="fas fa-angle-down mr-2"></i> 상세 조회 </span>
-                                            </button>
-                                        </h2>
+                                    <div class="card-header d-flex align-items-center" id="headingOne" style="height: 50px;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="mb-0">
+                                            <i class="fas fa-angle-down mr-2"></i> 상세 조회
+                                        </span>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            하이
+                                            <div class="row" style="width: 100%; height: 30%;">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-2">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            본관
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                            <a class="dropdown-item" href="#">본관</a>
+                                                            <a class="dropdown-item" href="#">신관</a>
+                                                            <a class="dropdown-item" href="#">별관</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 40px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            패밀리스위트
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                            <a class="dropdown-item" href="#">패밀리스위트</a>
+                                                            <a class="dropdown-item" href="#">8인 패밀리 스위트</a>
+                                                            <a class="dropdown-item" href="#">씨네마</a>
+                                                            <a class="dropdown-item" href="#">2인스파</a>
+                                                            <a class="dropdown-item" href="#">4인스파</a>
+                                                            <a class="dropdown-item" href="#">2인스파 스위트</a>
+                                                            <a class="dropdown-item" href="#">4인스파 스위트</a>
+                                                            <a class="dropdown-item" href="#">6인스파 스위트</a>
+                                                            <a class="dropdown-item" href="#">6인스파 401</a>
+                                                            <a class="dropdown-item" href="#">6인스파 402</a>
+                                                            <a class="dropdown-item" href="#">8층</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 40px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            플랫폼
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                            <a class="dropdown-item" href="#">아고다</a>
+                                                            <a class="dropdown-item" href="#">야놀자</a>
+                                                            <a class="dropdown-item" href="#">비앤비</a>
+                                                            <a class="dropdown-item" href="#">네이버</a>
+                                                            <a class="dropdown-item" href="#">씨트립</a>
+                                                            <a class="dropdown-item" href="#">익스피디아</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%; height: 40px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            투숙 여부
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                                                            <a class="dropdown-item" href="#">방문 전</a>
+                                                            <a class="dropdown-item" href="#">투숙</a>
+                                                            <a class="dropdown-item" href="#">취소</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" style="width: 100%; height: 40px;" />
+                                                        <label for="inputLastName" style="margin-top: -9px; font-size: 13px; color:gray">예약자 성함</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                            </div>
+
+                                            <div class="row" style="width: 100%; height: 30%;">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-3 mt-3">
+                                                        <input type="text" id="reservationDate" class="form-control" style="width: 100%; height: 40px;">
+                                                        <label for="reservationDate"><i class="fas fa-calendar-days mr-2"></i>예약 날짜</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-3 mt-3">
+                                                        <input type="text" id="checkInDateSearch" class="form-control" style="width: 100%; height: 40px;">
+                                                        <label for="checkInDateSearch"><i class="fas fa-calendar-days mr-2"></i>체크인 날짜</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-3 mt-3">
+                                                        <input type="text" id="checkOutDateSearch" class="form-control" style="width: 100%; height: 40px;">
+                                                        <label for="checkOutDateSearch"><i class="fas fa-calendar-days mr-2"></i>체크아웃 날짜</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-3 mt-3 mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputRate" type="text" placeholder="금액을 숫자만 입력해 주세요" oninput="formatAccommodationFee(this)"/>
+                                                        <label for="inputRate" style="margin-top: -9px; font-size: 13px; color:gray">숙박비</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-3 mt-3 mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputNationality" type="text" placeholder="국적" />
+                                                        <label for="inputNationality" style="margin-top: -9px; font-size: 13px; color:gray">국적</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                            </div>
+                                            <div class="row" style="width: 100%; height: 30%;">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputGuests" type="text" placeholder="투숙인원"/>
+                                                        <label for="inputGuests" style="margin-top: -9px; font-size: 13px; color:gray">투숙인원</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputRelationship" type="text" placeholder="관계" />
+                                                        <label for="inputRelationship" style="margin-top: -9px; font-size: 13px; color:gray">관계</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputRelationship" type="text" placeholder="관계" />
+                                                        <label for="inputRelationship" style="margin-top: -9px; font-size: 13px; color:gray">미성년자</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputPhoneNumber" type="text" placeholder="연락처"/>
+                                                        <label for="inputPhoneNumber" style="margin-top: -9px; font-size: 13px; color:gray">연락처</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating mb-md-0">
+                                                        <input class="form-control" style="width: 100%; height: 40px;" id="inputEmail" type="text" placeholder="이메일" />
+                                                        <label for="inputEmail" style="margin-top: -9px; font-size: 13px; color:gray">이메일</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                            </div>
+                                            <div class="row mt-3 d-flex justify-content-end">
+                                                <a href="/the-myeongdong/reservations/register" class="btn btn-dark" style="margin-right: 10px; width: 110px;">조회하기</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        
 
                         <div class="card mb-4 mt-3">
                             <div class="card-header d-flex justify-content-between align-items-center">
@@ -108,4 +248,40 @@
                         </div>
                     </div>
                 </main>
+
+<script>
+    $(document).ready(function() {
+        $('#reservationDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkInDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkOutDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+</script>
+<script>
+    function formatAccommodationFee(input) {
+        // 입력값에서 쉼표를 제거하고 숫자만 남깁니다.
+        let value = input.value.replace(/[^0-9]/g, '');
+        // 숫자를 오른쪽에서부터 왼쪽으로 3자리씩 쉼표로 구분합니다.
+        value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        // 포맷팅된 값으로 입력 필드의 값을 업데이트합니다.
+        input.value = value;
+    }
+</script>
 {% endblock %}
