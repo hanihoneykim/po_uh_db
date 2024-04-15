@@ -14,31 +14,7 @@
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <div>
                                 <i class="fas fa-table me-1"></i>
-                                    고객 정보
-                                </div>
-                            </div>
-                            <div class="card-body p-4">
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-4 mt-3">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <div>
-                                <i class="fas fa-table me-1"></i>
-                                    고객 메모
-                                </div>
-                            </div>
-                            <div class="card-body p-4">
-
-                            </div>
-                        </div>
-                        
-                        <div class="card mb-4 mt-3">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <div>
-                                <i class="fas fa-table me-1"></i>
-                                    고객 예약 조회
+                                    고객 정보 조회
                                 </div>
                             </div>
                             <div class="card-body p-4">
@@ -47,49 +23,31 @@
                                         <table class="table table-bordered display" id="dataTables" width="100%" cellspacing="0">
                                             <thead>
                                                 <tr>
-                                                    <th style="white-space: nowrap;">건물</th>
-                                                    <th style="white-space: nowrap;">방타입</th>
-                                                    <th style="white-space: nowrap;">예약자 성함</th>
-                                                    <th style="white-space: nowrap;">플랫폼</th>
-                                                    <th style="white-space: nowrap;">예약날짜</th>
-                                                    <th style="white-space: nowrap;">리드타임</th>
-                                                    <th style="white-space: nowrap;">체크인</th>
-                                                    <th style="white-space: nowrap;">체크아웃</th>
-                                                    <th style="white-space: nowrap;">숙박일</th>
-                                                    <th style="white-space: nowrap;">숙박비</th>
-                                                    <th style="white-space: nowrap;">ADR</th>
-                                                    <th style="white-space: nowrap;">국적</th>
-                                                    <th style="white-space: nowrap;">투숙인원</th>
-                                                    <th style="white-space: nowrap;">관계</th>
-                                                    <th style="white-space: nowrap;">투숙/취소</th>
-                                                    <th style="white-space: nowrap;">미성년자</th>
+                                                    <th style="white-space: nowrap;">고객명</th>
                                                     <th style="white-space: nowrap;">연락처</th>
+                                                    <th style="white-space: nowrap;">생년월일</th>
+                                                    <th style="white-space: nowrap;">개인/기업</th>
                                                     <th style="white-space: nowrap;">이메일</th>
-                                                    <th style="white-space: nowrap;">비고</th>
+                                                    <th style="white-space: nowrap;">카드번호</th>
+                                                    <th style="white-space: nowrap;">국적</th>
+                                                    <th style="white-space: nowrap;">직업</th>
+                                                    <th style="white-space: nowrap;">메모</th>
+                                                    <th style="white-space: nowrap;">방문횟수</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {% for item in reservations %}
+                                                {% for item in guests %}
                                                     <tr onclick="window.location='/the-myeongdong/reservations/{{ item.id }}';" style="cursor: pointer;">
-                                                        <td style="white-space: nowrap;">{{ item.building_location }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.room_type }}</td>
                                                         <td style="white-space: nowrap;">{{ item.guest_name }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.platform_name }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.reservation_date }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.lead_time }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.check_in_date }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.check_out_date }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.lenth_of_stay }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.total_room_charge }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.adr}}</td>
-                                                        <td style="white-space: nowrap;">{{ item.nationality }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.guest_count }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.relationship }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.is_checked_in }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.is_minor }}</td>
                                                         <td style="white-space: nowrap;">{{ item.phone_number }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.date_of_birth }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.guest_type }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.credit_card_number }}</td>
                                                         <td style="white-space: nowrap;">{{ item.email }}</td>
-                                                        <td style="white-space: nowrap;">{{ item.remarks|truncatechars:30 }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.nationality }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.job }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.memo|truncatechars:30 }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.visit_count }}</td>
                                                     </tr>
                                                 {% endfor %}
                                             </tbody>
@@ -126,7 +84,7 @@
                             <p style="font-size: 13px; margin-bottom: 21px;">카드번호 </p>
                             <p style="font-size: 13px; margin-bottom: 21px;">국적 </p>
                             <p style="font-size: 13px; margin-bottom: 21px;">직업 </p>
-                            <p style="font-size: 13px; margin-bottom: 21px;">비고 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">메모 </p>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -142,27 +100,27 @@
                                 <label for="reservationDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
                                 <span style="font-size: 13px; margin-left: 10px; margin-top: 10px;">까지</span>
                             </div>
-                            <input id="roomNumberInput" style="width: 220px; height: 30px; margin-bottom: 10px; margin-left: -20px; font-size: 13px;" placeholder="고객명"><br>
-                            <input id="guestNameInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="연락처"><br>
-                            <input id="guestNameInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="생년월일"><br>
-                            <div style="margin-left: -20px; margin-bottom: 10px;">
+                            <input id="guestNameInput" style="width: 220px; height: 30px; margin-bottom: 10px; margin-left: -20px; font-size: 13px;" placeholder="고객명"><br>
+                            <input id="phoneNumberInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="연락처"><br>
+                            <input id="dateOfBirthInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="생년월일"><br>
+                            <div id="guestTypeSelect" style="margin-left: -20px; margin-bottom: 10px;">
                                 <select id="selectionDropdown" style="font-size: 13px; font-weight: 300; width: 220px; height: 30px;">
                                     <option value="individual"">개인</option>
                                     <option value="corporate">법인</option>
                                     <option value="all">전체</option>
                                 </select>
                             </div>
-                            <input id="checkOutDateInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="이메일"><br>
-                            <input id="advancePaymentInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="카드번호"><br>
-                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="국적"><br>
-                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="직업"><br>
-                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="비고"><br>
+                            <input id="creditCardNumberInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="이메일"><br>
+                            <input id="emailInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="카드번호"><br>
+                            <input id="nationalityInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="국적"><br>
+                            <input id="jobInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="직업"><br>
+                            <input id="memoInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="비고"><br>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">조회</button>
+                <button id="searchButton" type="button" class="btn btn-secondary" data-dismiss="modal">조회</button>
             </div>
         </div>
     </div>
@@ -220,4 +178,60 @@
         input.value = value;
     }
 </script>
+
+<script>
+    $(document).ready(function() {
+        // 조회 버튼 클릭 시
+        $('#searchButton').click(function() {
+            // 각 입력 필드의 값들을 가져옵니다.
+            var guestName = $('#guestNameInput').val();
+            var phoneNumber = $('#phoneNumberInput').val();
+            var dateOfBirth = $('#dateOfBirthInput').val();
+            var guestType = $('#guestTypeSelect').val();
+            var creditCardNumber = $('#creditCardNumberInput').val();
+            var email = $('#emailInput').val();
+            var nationality = $('#nationalityInput').val();
+            var job = $('#jobInput').val();
+            var memo = $('#memoInput').val();
+
+            // 새로운 URL을 생성합니다.
+            var url = '/guest_inquiry?';
+            // 각 값들을 쿼리 파라미터로 추가합니다.
+            if (guestName !== '') {
+                url += 'guest_name=' + guestName + '&';
+            }
+            if (phoneNumber !== '') {
+                url += 'phone_number=' + phoneNumber + '&';
+            }
+            if (dateOfBirth !== '') {
+                url += 'date_of_birth=' + dateOfBirth + '&';
+            }
+            if (guestType !== '') {
+                url += 'guest_type=' + guestType + '&';
+            }
+            if (creditCardNumber !== '') {
+                url += 'credit_card_number=' + creditCardNumber + '&';
+            }
+            if (email !== '') {
+                url += 'email=' + email + '&';
+            }
+            if (nationality !== '') {
+                url += 'nationality=' + nationality + '&';
+            }
+            if (job !== '') {
+                url += 'job=' + job + '&';
+            }
+            if (memo !== '') {
+                url += 'memo=' + memo + '&';
+            }
+
+            // 마지막 '&' 문자 제거
+            url = url.slice(0, -1);
+
+            // 새로운 URL로 이동합니다.
+            window.location.href = url;
+        });
+    });
+</script>
+
 {% endblock %}
