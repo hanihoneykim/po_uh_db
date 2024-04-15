@@ -9,7 +9,7 @@ class GuestSerializer(serializers.ModelSerializer):
     class Meta:
         model = Guest
         fields = "__all__"
-        read_only_fields = ("id", "visit_count")
+        read_only_fields = ("id",)
 
     def get_visit_count(self, obj):
         # MyeongdongReservation 모델에서 'guest_name'과 'phone_number'가 일치하는 항목들의 개수를 가져옵니다.

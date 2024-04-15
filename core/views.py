@@ -125,8 +125,8 @@ class GuestListView(generics.ListCreateAPIView):
                 memo_param,
             ]
         ):
-            # 아무 데이터도 가져오지 않습니다.
-            queryset = Guest.objects.none()
+            # 가장 최근에 생성된 10개의 데이터를 가져옵니다.
+            queryset = Guest.objects.order_by("-id")[:10]
             serializer = GuestSerializer(queryset, many=True)
             return render(request, self.template_name, {"guests": serializer.data})
 
@@ -134,3 +134,24 @@ class GuestListView(generics.ListCreateAPIView):
         queryset = self.get_queryset()
         serializer = GuestSerializer(queryset, many=True)
         return render(request, self.template_name, {"guests": serializer.data})
+
+
+class GuestDetailView(generics.RetrieveUpdateDestroyAPIView):
+    template_name = "pages/guest/guest_detail_info.html"
+    serializer_class = GuestSerializer
+    queryset = Guest.objects.all()
+    lookup_field = "pk"
+
+    def get(self, request, pk):
+        guest = Guest.objects.get(pk=pk)
+
+        guest_reservations = MyeongdongReservation.objects.filter(
+            Q(guest_name=guest.guest_name) | Q(phone_number=guest.phone_number)
+        )
+
+        serializer = GuestSerializer(guest)
+        return render(
+            request,
+            "pages/guest/guest_detail_info.html",
+            {"guest": serializer.data, "guest_reservations": guest_reservations},
+        )

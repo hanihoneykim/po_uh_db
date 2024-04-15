@@ -8,4 +8,7 @@ urlpatterns = [
     path("main", Main, name="main"),
     path("branch", views.branch, name="branch"),
     path("guest_inquiry", views.GuestListView.as_view(), name="guest_inquiry"),
+    path(
+        "guest_inquiry/<str:pk>", views.GuestDetailView.as_view(), name="guest_inquiry"
+    ),
 ]
