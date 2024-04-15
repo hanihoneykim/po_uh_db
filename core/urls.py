@@ -6,5 +6,6 @@ from the_myeongdong.views import Main
 urlpatterns = [
     path("", UserLogin.as_view(), name="login"),
     path("main", Main, name="main"),
-    path("guest_inquiry", Main, name="guest_inquiry"),
+    path("branch", views.branch, name="branch"),
+    path("guest_inquiry", views.GuestListView.as_view(), name="guest_inquiry"),
 ]

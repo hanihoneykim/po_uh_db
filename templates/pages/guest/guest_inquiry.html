@@ -1,0 +1,223 @@
+{% extends 'common.html' %}
+{% block content %}
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="mt-4">
+                                고객 조회
+                            </h2>
+                            <a data-toggle="modal" data-target="#detailGuestModal" class="btn btn-dark align-items-center mt-4" style="margin-right: 10px; height: 40px; color: white;">고객 상세 조회</a>
+                        </div>
+
+                        <div class="card mb-4 mt-3">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div>
+                                <i class="fas fa-table me-1"></i>
+                                    고객 정보
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 mt-3">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div>
+                                <i class="fas fa-table me-1"></i>
+                                    고객 메모
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-4 mt-3">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div>
+                                <i class="fas fa-table me-1"></i>
+                                    고객 예약 조회
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div style="overflow-x: auto;">
+                                    <div class="table-responsive my-4">
+                                        <table class="table table-bordered display" id="dataTables" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th style="white-space: nowrap;">건물</th>
+                                                    <th style="white-space: nowrap;">방타입</th>
+                                                    <th style="white-space: nowrap;">예약자 성함</th>
+                                                    <th style="white-space: nowrap;">플랫폼</th>
+                                                    <th style="white-space: nowrap;">예약날짜</th>
+                                                    <th style="white-space: nowrap;">리드타임</th>
+                                                    <th style="white-space: nowrap;">체크인</th>
+                                                    <th style="white-space: nowrap;">체크아웃</th>
+                                                    <th style="white-space: nowrap;">숙박일</th>
+                                                    <th style="white-space: nowrap;">숙박비</th>
+                                                    <th style="white-space: nowrap;">ADR</th>
+                                                    <th style="white-space: nowrap;">국적</th>
+                                                    <th style="white-space: nowrap;">투숙인원</th>
+                                                    <th style="white-space: nowrap;">관계</th>
+                                                    <th style="white-space: nowrap;">투숙/취소</th>
+                                                    <th style="white-space: nowrap;">미성년자</th>
+                                                    <th style="white-space: nowrap;">연락처</th>
+                                                    <th style="white-space: nowrap;">이메일</th>
+                                                    <th style="white-space: nowrap;">비고</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for item in reservations %}
+                                                    <tr onclick="window.location='/the-myeongdong/reservations/{{ item.id }}';" style="cursor: pointer;">
+                                                        <td style="white-space: nowrap;">{{ item.building_location }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.room_type }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.guest_name }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.platform_name }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.reservation_date }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.lead_time }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.check_in_date }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.check_out_date }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.lenth_of_stay }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.total_room_charge }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.adr}}</td>
+                                                        <td style="white-space: nowrap;">{{ item.nationality }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.guest_count }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.relationship }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.is_checked_in }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.is_minor }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.phone_number }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.email }}</td>
+                                                        <td style="white-space: nowrap;">{{ item.remarks|truncatechars:30 }}</td>
+                                                    </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+<!-- Modal -->
+
+<div class="modal fade" id="detailGuestModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span style="font-size: 20px; font-weight: bold; margin-right: 20px;">고객 상세 조회</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mb-3 ml-3">
+                <div class="row">
+                    <div class="col-md-3 mr-3">
+                        <!-- 항목 부분 -->
+                        <div style="text-align: right;">
+                            <p style="font-size: 13px; margin-bottom: 70px; margin-top: 10px;">방문 기간 </p>
+                            <p style="font-size: 13px; margin-bottom: 20px;">고객명 </p>
+                            <p style="font-size: 13px; margin-bottom: 20px;">연락처 </p>
+                            <p style="font-size: 13px; margin-bottom: 20px;">생년월일 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">개인/기업 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">이메일 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">카드번호 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">국적 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">직업 </p>
+                            <p style="font-size: 13px; margin-bottom: 21px;">비고 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- 인풋 부분 -->
+                        <div>
+                            <div class="form-floating d-flex">
+                                <input type="text" id="reservationDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
+                                <label for="reservationDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
+                                <span style="font-size: 13px; margin-left: 10px; margin-top: 10px;">부터</span>
+                            </div>
+                            <div class="form-floating d-flex">
+                                <input type="text" id="reservationDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
+                                <label for="reservationDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
+                                <span style="font-size: 13px; margin-left: 10px; margin-top: 10px;">까지</span>
+                            </div>
+                            <input id="roomNumberInput" style="width: 220px; height: 30px; margin-bottom: 10px; margin-left: -20px; font-size: 13px;" placeholder="고객명"><br>
+                            <input id="guestNameInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="연락처"><br>
+                            <input id="guestNameInput" style="width: 220px; margin-bottom: 10px; height: 30px; margin-left: -20px; font-size: 13px;" placeholder="생년월일"><br>
+                            <div style="margin-left: -20px; margin-bottom: 10px;">
+                                <select id="selectionDropdown" style="font-size: 13px; font-weight: 300; width: 220px; height: 30px;">
+                                    <option value="individual"">개인</option>
+                                    <option value="corporate">법인</option>
+                                    <option value="all">전체</option>
+                                </select>
+                            </div>
+                            <input id="checkOutDateInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="이메일"><br>
+                            <input id="advancePaymentInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="카드번호"><br>
+                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="국적"><br>
+                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="직업"><br>
+                            <input id="vendorNameInput" style="margin-bottom: 10px; width: 220px; height: 30px; font-size: 13px; margin-left: -20px;" placeholder="비고"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">조회</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 문서가 로드된 후 실행되는 함수
+    document.addEventListener('DOMContentLoaded', function() {
+        // 고객 상세 조회 버튼 요소를 찾습니다.
+        var detailGuestButton = document.querySelector('[data-target="#detailGuestModal"]');
+
+        // 고객 상세 조회 버튼이 클릭되었을 때 실행될 함수를 정의합니다.
+        detailGuestButton.addEventListener('click', function() {
+            // 모달을 보이도록 설정합니다.
+            var modal = document.querySelector('#detailGuestModal');
+            modal.style.display = 'block';
+        });
+    });
+</script>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#reservationDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkInDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+
+    $(document).ready(function() {
+        $('#checkOutDateSearch').datepicker({
+            language: "ko",
+            autoclose: true,
+            todayHighlight: true
+        })
+    })
+</script>
+<script>
+    function formatAccommodationFee(input) {
+        // 입력값에서 쉼표를 제거하고 숫자만 남깁니다.
+        let value = input.value.replace(/[^0-9]/g, '');
+        // 숫자를 오른쪽에서부터 왼쪽으로 3자리씩 쉼표로 구분합니다.
+        value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        // 포맷팅된 값으로 입력 필드의 값을 업데이트합니다.
+        input.value = value;
+    }
+</script>
+{% endblock %}
