@@ -1,0 +1,2987 @@
+[
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이동녕",
+            "date_of_birth": "1989-02-23",
+            "nationality": "한국",
+            "phone_number": "010-6403-1906",
+            "email": "mvmbs@gmail.com",
+            "memo": "+852 800 931 187 / 홍콩 4박 / 전체청소 7\n\n3/19 왓츠앱 미사용자\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SZU WEI LIU",
+            "date_of_birth": "1983-05-02",
+            "nationality": "대만",
+            "phone_number": "886 9756 82828",
+            "email": "etsrp@gmail.com",
+            "memo": "+1 213-604-1337 / 미국 7박 / 전체청소 8\n와츠앱통해서 사전안내문 전송완\n\n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "정지연",
+            "date_of_birth": "1980-07-26",
+            "nationality": "한국",
+            "phone_number": "010-9956-1830",
+            "email": "vlnzg@gmail.com",
+            "memo": "0-6281238888238 / 미국 4박 / 전체청소 10 / \n와츠앱 미사용자",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "XINGYING XU",
+            "date_of_birth": "1989-05-20",
+            "nationality": "중국",
+            "phone_number": "86 188 1111 5868",
+            "email": "uqycy@gmail.com",
+            "memo": "65 9111 7206 왓츠앱 / 싱가폴 4박 / 전체청소 10 / \n\n3/20 사전안내문 전송 완료\n레스토랑, 카페, 당일 여행등 많은 정보 있으니 언제든지 연락 달라고 하였으나 당장은 필요 없다고 말씀하시고 객실 사진보여주시며 본인이 예약한 객실 타입이 맞는지 다시 한번 확인 해달라고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Grace Xu",
+            "date_of_birth": "1987-06-22",
+            "nationality": "중국",
+            "phone_number": "86 188 1111 5868",
+            "email": "cirwt@gmail.com",
+            "memo": "+60 12-313 1075  / 국적모름6박 / 전체청소 11, 14 /\n3/18 와츠앱으로  사전안내문 전송 완\n\n3/18 남이섬이나 DMZ 투어를 할수있냐고 문의해주셔서, 남이섬 투어의 경우 저희가 도와드릴 수 있고 택시도 예약도 도와드리겠다고 말씀드리고, 정확한 디테일 원하시는 거 같아서 가격이랑 세세하게 안내 도와드림. ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "기주 김",
+            "date_of_birth": "1982-10-30",
+            "nationality": "한국",
+            "phone_number": "010-3575-4715",
+            "email": "uuafr@gmail.com",
+            "memo": "싱가폴 7박 /  전체 8, 11/\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Goh Chin Yee",
+            "date_of_birth": "1985-10-22",
+            "nationality": "브루나이",
+            "phone_number": "010-5677-3005",
+            "email": "elblh@gmail.com",
+            "memo": "태국 4박 / +66 81 915 0399 / 전체청소6 / \n\n3/21 와츠앱으로 사전안내문 전송 완\n\n일행 한명 추가 총 10명",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "김민주",
+            "date_of_birth": "1986-01-05",
+            "nationality": "한국",
+            "phone_number": "010-5128-1016",
+            "email": "suyna@gmail.com",
+            "memo": "국적모름5박/ 명동점 쿠폰1\n\n백오피스 캐리어 3개 보관중",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "MI JUNG KANG",
+            "date_of_birth": "1988-11-08",
+            "nationality": "한국",
+            "phone_number": "010-4517-8148",
+            "email": "zjdwu@gmail.com",
+            "memo": "왓츠앱 / 호주 4박 / 전체청소 9\n\n3/18 왓츠앱 통해 사전안내문 전송 완료.\n\n3/18 호텔투숙하는게 너무 기대된다고 하셔서, 저희도 너무 기대된다고 뭐 좋아하시는지 한식레스토랑,패션샵,디저트레스토랑 아니면 필요하신거 꼭 알려달라고 너무 추천해드리고싶은 샵이 있다고 말씀드리니, 우리의 첫 한국여행인데 가장 멋진 한국 궁중음식 방문 원한다고 하셔서, \n제가 한국에서 가장 멋진 궁중 음식 레스토랑 안내도와드리겠다고 말씀드리고,\n룸하고 홀 가격 각각 안내도와드리고 '한국의집' 언급해드리니, 와우 너무 좋아보인다고 같이 가는 일행들하고 얘기 좀만 더해보고 결정해서 얘기해주겠다고 다시한번 너무고맙다고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jasmine Loong Lee",
+            "date_of_birth": "1982-12-31",
+            "nationality": "말레이시아",
+            "phone_number": "",
+            "email": "egcca@gmail.com",
+            "memo": "+65 8681 6309 / 싱가폴 4박 / 전체청소 12일\n\n\n3/21 와츠앱통해서 사전 안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kornkanok Sae-tieo",
+            "date_of_birth": "1980-03-16",
+            "nationality": "태국",
+            "phone_number": "66 0640846888",
+            "email": "dsiyj@gmail.com",
+            "memo": "국적 모름 / 연락처 없음 / 전체청소 9",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "LOK IN HO",
+            "date_of_birth": "1984-01-05",
+            "nationality": "홍콩",
+            "phone_number": "852 64825274",
+            "email": "jvuqa@gmail.com",
+            "memo": "왓츠앱 / 홍콩 3박\n\n3/22 왓츠앱으로 사전 안내문 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Shun Fong Jenly Fong",
+            "date_of_birth": "1986-06-28",
+            "nationality": "홍콩",
+            "phone_number": "852 97806778",
+            "email": "miple@gmail.com",
+            "memo": "왓츠앱/ +1 321-258-2170/ 미국3박 \n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SHIZUKA SAKURAI",
+            "date_of_birth": "1984-02-01",
+            "nationality": "일본",
+            "phone_number": "",
+            "email": "wcwua@gmail.com",
+            "memo": "66 0865505677 / 태국4박 /  전체청소 11 / \n\n3/21 와츠앱 통하여 사전안내문 전송 완. 전자레인지 객실에 있는지 문의 주셔서 있다고 답함.\n\n3/23 아기의자 세팅요망",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Si Nga Tong",
+            "date_of_birth": "1989-09-15",
+            "nationality": "마카오",
+            "phone_number": "85366809956",
+            "email": "xlfml@gmail.com",
+            "memo": "1 3146064144 / 미국8박 / 전체청소9일,13일\n\n와츠앱 통해서 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sin Ting Ng",
+            "date_of_birth": "1982-02-26",
+            "nationality": "홍콩",
+            "phone_number": "852 92843166",
+            "email": "tgwxk@gmail.com",
+            "memo": "010-5858-3653 / RB / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "lisa low",
+            "date_of_birth": "1987-12-04",
+            "nationality": "싱가포르",
+            "phone_number": "65 98382015",
+            "email": "kpdkh@gmail.com",
+            "memo": "+66 99 414 2356 라인 / 태국 3박 / \n\n3/30 라인 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tiong Hui Yeo",
+            "date_of_birth": "1989-01-18",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "agydw@gmail.com",
+            "memo": "FS / 010-4234-1192 /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tsz Wai Tsang",
+            "date_of_birth": "1988-08-27",
+            "nationality": "",
+            "phone_number": "",
+            "email": "xjtle@gmail.com",
+            "memo": "왓츠앱 / 국적모름 4박 / 전체청소 7\n\n3/13 왓츠앱 통해 공항밴 예약해달라고 하여 예약폼 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "YANYING ZHU",
+            "date_of_birth": "1986-09-19",
+            "nationality": "",
+            "phone_number": "",
+            "email": "mxsso@gmail.com",
+            "memo": "국적모름 2박\n\n백오피스 짐 3개 보관중",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SIU TING GOH",
+            "date_of_birth": "1983-11-28",
+            "nationality": "",
+            "phone_number": "",
+            "email": "uargj@gmail.com",
+            "memo": "RB / 010-3105-0259 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "LITIAN KWA",
+            "date_of_birth": "1987-09-09",
+            "nationality": "",
+            "phone_number": "",
+            "email": "gqtwl@gmail.com",
+            "memo": "+66 84 222 1950 / 태국2박 \n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "KIM YELYNN",
+            "date_of_birth": "1986-08-08",
+            "nationality": "",
+            "phone_number": "86 20 8391 1000",
+            "email": "etnyq@gmail.com",
+            "memo": "왓츠앱 / 국적모름3박/ 신세계쿠폰1\n\n3/5 왓츠앱 통해 사전안내문 전송 완료.\n3/19 4/5 아침 생일 케이크 요청. 금액 안내 완료.\n3/20 케이크 어떤 맛으로 하실건지 컨택중 ---> 초콜렛 2호",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "wai yan yuen",
+            "date_of_birth": "1987-04-12",
+            "nationality": "",
+            "phone_number": "86 20 8391 1000",
+            "email": "yhzzm@gmail.com",
+            "memo": "852-98036255/ 국적모름3박/ 신세계 쿠폰1\n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Yeojin Kim",
+            "date_of_birth": "1980-05-05",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "cyazq@gmail.com",
+            "memo": "60-107789665\n국적모름2박/ 신세계 쿠폰1\n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "강완규",
+            "date_of_birth": "1985-06-02",
+            "nationality": "한국",
+            "phone_number": "010-9432-5791",
+            "email": "aumul@gmail.com",
+            "memo": "60-126785007\n국적모름2박/ 신세계 쿠폰1",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이우진",
+            "date_of_birth": "1985-04-02",
+            "nationality": "한국",
+            "phone_number": "010-2393-5569",
+            "email": "peqcm@gmail.com",
+            "memo": " +55 85 98551-8880 / 브라질 6박 /  전체 12 /\n\n3/18 와츠앱 통하여 사전안내문 전송 완\n\n3/18 택시타고 공항에서 호텔까지 가격이 어떻게 되냐고 여쭤봐주셔서, 현금,카드 가격 각각 안내도와드리고 원한다면 우리쪽에서 택시 예약해줄수있으니까 언제든 편하게 연락하라고 전달도와드림. 그리고 다른 음식점이나  패션샵 안내 도와드리고 싶다고 말씀드리니, KPOP 콘서트를 4월에 보고싶다고 하셔서, 4월에는 KPOP콘서트 예정이 없는데 혹시 뮤지컬 추천해주고싶은데  어떠냐고 여쭤보니까 좋다고 해서,  <이솝이야기> >넥스트 투 노멀> 추천 해드림.\n3/19 이름이 들어간 도장 파고싶다고 하셔서 현재 소통중\n3/27 명동까지 공항밴 원하셔서 예약, 75호9040",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "최희선",
+            "date_of_birth": "1989-05-17",
+            "nationality": "한국",
+            "phone_number": "010-7576-1095",
+            "email": "suihv@gmail.com",
+            "memo": "010-6524-5310\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Yeeun Kim",
+            "date_of_birth": "1988-12-04",
+            "nationality": "한국",
+            "phone_number": "010-4535-4461",
+            "email": "cppgf@gmail.com",
+            "memo": "국적모름 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "서정원",
+            "date_of_birth": "1988-11-17",
+            "nationality": "한국",
+            "phone_number": "50720228297",
+            "email": "egwkp@gmail.com",
+            "memo": "LJ840911@yahoo.com  / 호주 5박 / 전체청소 8일 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jin Young Lee",
+            "date_of_birth": "1988-04-14",
+            "nationality": "한국",
+            "phone_number": "1073070717",
+            "email": "atkdl@gmail.com",
+            "memo": "63 09337203272 / 필리핀 3박 / \n본202 하고 일행 \n\n3/9 와츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kornkanok Sae-tieo",
+            "date_of_birth": "1986-05-30",
+            "nationality": "태국",
+            "phone_number": "66 0640846888",
+            "email": "xnkjb@gmail.com",
+            "memo": "010-4148-3855 / 본2 >> 본4 룸업글\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sukyeong Lee",
+            "date_of_birth": "1988-07-07",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "mflbx@gmail.com",
+            "memo": "010-8079-1070 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "HyeRyung Jo",
+            "date_of_birth": "1987-07-30",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "axwzl@gmail.com",
+            "memo": "0507 1816 0189",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Li Oi Yan",
+            "date_of_birth": "1980-06-21",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "ssxlp@gmail.com",
+            "memo": "010-9246-6694 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Matthew Liu",
+            "date_of_birth": "1986-11-22",
+            "nationality": "미국",
+            "phone_number": "",
+            "email": "lfwsz@gmail.com",
+            "memo": "010-9031-2113",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Gek Li Tracy Seah",
+            "date_of_birth": "1984-08-29",
+            "nationality": "싱가포르",
+            "phone_number": "65 91886843",
+            "email": "rpgru@gmail.com",
+            "memo": "번호모름 / 국적불명 2박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Wai Ip Ho",
+            "date_of_birth": "1988-02-21",
+            "nationality": "홍콩",
+            "phone_number": "85260305893",
+            "email": "sylpb@gmail.com",
+            "memo": "+62 817-9190-077 / 인도네시아 2박\n\n8일 체크아웃 후 본202, 본901, 신301로 룸무브\n\n4/2 기사포함 렌트카 문의주셔서 롯데렌트카쪽 확인 및 대략적인 비용 받고 신청 원하시면 이메일로 문의주시면 된다고 하셔서 이메일 주소 까지 받은 후 고객님께 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ming Hin Victor Ng",
+            "date_of_birth": "1985-10-26",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "ypxhb@gmail.com",
+            "memo": "62 08179190077 / 인도네시아 3박 / \n\n3/30 왓츠앱으로 사전안내문 전송 완\n\n본 202, 901과 일행",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jia le Yeoh",
+            "date_of_birth": "1985-01-24",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "kvktj@gmail.com",
+            "memo": "62 08179190077 / 인도네시아 3박 / \n\n3/30 왓츠앱으로 사전안내문 전송 완\n\n신301, 본 202와 일행",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Clarisse Capistrano",
+            "date_of_birth": "1984-02-21",
+            "nationality": "",
+            "phone_number": "",
+            "email": "krjkn@gmail.com",
+            "memo": "62 08179190077 / 인도네시아3박  \n Stacysandrato@hotmail.com\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "최현준",
+            "date_of_birth": "1986-09-25",
+            "nationality": "한국",
+            "phone_number": "50350997188",
+            "email": "qbwmg@gmail.com",
+            "memo": "polly11920@gmail.com / 홍콩2박 /   3/14 안내문 이메일 전송완 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Bandgee Kallra (인플루언서)",
+            "date_of_birth": "1984-03-02",
+            "nationality": "",
+            "phone_number": "",
+            "email": "aasmc@gmail.com",
+            "memo": "010-5598-9491 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Bandgee Kallra (인플루언서)",
+            "date_of_birth": "1989-04-20",
+            "nationality": "",
+            "phone_number": "",
+            "email": "odfeh@gmail.com",
+            "memo": "+81 16466836904 / 일본 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jane Kim",
+            "date_of_birth": "1987-11-25",
+            "nationality": "미국",
+            "phone_number": "010-9722-7613",
+            "email": "kapfv@gmail.com",
+            "memo": "바이더씨 요청 4인 스파예약 ---> 6인 스파로 변경 by 우곤팀장님 / 추후 결제 예정 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Yu Sheung Cheng",
+            "date_of_birth": "1981-05-14",
+            "nationality": "홍콩",
+            "phone_number": "852 6292 9537",
+            "email": "zwtmb@gmail.com",
+            "memo": "",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "KIM TSUN YUEN",
+            "date_of_birth": "1987-01-24",
+            "nationality": "",
+            "phone_number": "",
+            "email": "hkqkz@gmail.com",
+            "memo": "jeffwong282@gmail.com / 홍콩 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SZE KI STELLA WONG",
+            "date_of_birth": "1983-12-18",
+            "nationality": "",
+            "phone_number": "",
+            "email": "yavto@gmail.com",
+            "memo": "+65 92984629 / lhernwei@gmail.com / 싱가포르 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "JOHNNY LUT IN NG",
+            "date_of_birth": "1987-05-30",
+            "nationality": "",
+            "phone_number": "",
+            "email": "dtokf@gmail.com",
+            "memo": "말레이시아2박  / joey_yee_88@hotmail.com\n\n본601에서 룸무브하는 건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "KEAH MENG LIM",
+            "date_of_birth": "1986-10-20",
+            "nationality": "",
+            "phone_number": "",
+            "email": "jscxb@gmail.com",
+            "memo": "010-2633-6109 / cobbler_@naver.com ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "BOJUN WANG",
+            "date_of_birth": "1981-10-15",
+            "nationality": "",
+            "phone_number": "",
+            "email": "yesqy@gmail.com",
+            "memo": "이준열\n010-9479-7139\n본부장님 예약건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Chi ting Hou",
+            "date_of_birth": "1988-01-19",
+            "nationality": "",
+            "phone_number": "",
+            "email": "uvgob@gmail.com",
+            "memo": "60 +19-9666 669/ 말레이시아3박\n\n3/28 왓츠앱 미사용자",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "정민주",
+            "date_of_birth": "1980-10-17",
+            "nationality": "한국",
+            "phone_number": "010-6236-4570",
+            "email": "mmkyy@gmail.com",
+            "memo": "852-61130919 / 홍콩 4박 / 전체청소 7일 / 왓츠앱 사전안내문 전송완 / \n\n\n\n3/25 아이들과 함께 투숙할 예정이시며 맵지 않은 음식 추천 해달라고 하셔서 설렁탕(미성옥), 고깃집 (왕비집 명동본점), 한정식 (광화문 설가온), 까페(카페온화, 낙원역) 팥빙수 (설빙) 안내 해드림\n\n3/29 왕비집명동점 7시 4인 예약 원하셨으나 웨이팅으로만 가능한것 확인하여 고객님께 웨이팅없이 드시고 싶다고하시면 5시 30분 전에 오시면 가능하다고 알려드림\n\n4/1 물건 주문하셔서 배송 올 예정. 체크인때 전달 바랍니다. -> 아직 택배 도착하지 않음. 체크인때 손님과 확인 부탁드립니다.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "倩 王",
+            "date_of_birth": "1981-01-23",
+            "nationality": "중국",
+            "phone_number": "86 188 0948 2131",
+            "email": "vslzc@gmail.com",
+            "memo": "86-18515983823 / 말레이시아 1박 / 가족 6명 (성인 3명, 아이 3명) / 전체청소 5\n\n별502 연박건\n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "안도영",
+            "date_of_birth": "1981-07-04",
+            "nationality": "한국",
+            "phone_number": "010-2166-1101",
+            "email": "ywlhz@gmail.com",
+            "memo": "국적 모름 / 연락처 없음",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "유수완",
+            "date_of_birth": "1987-01-02",
+            "nationality": "한국",
+            "phone_number": "010-6470-4942",
+            "email": "mrlbd@gmail.com",
+            "memo": " +62 858-1180-7256 / 인도네시아 3박 / \n\n별403에서 3박 후 별402로 4박예정\n\n*이불 1개 세팅요망* 15,000KRW 체크인시 받아주세요.\n\n3/30 왓츠앱으로 사전안내문 전송 완.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "\t한주현",
+            "date_of_birth": "1989-12-22",
+            "nationality": "한국",
+            "phone_number": "010-3074-4725",
+            "email": "ufvrt@gmail.com",
+            "memo": "+62 858-1180-7256 / 인도네시아 4박 / \n\n별403에서 3박 후 별402로 4박예정(총 7박)\n\n*이불 1개 세팅요망* \n\n3/30 왓츠앱으로 사전안내문 전송 완.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "CHIUHUA CHU",
+            "date_of_birth": "1987-09-14",
+            "nationality": "",
+            "phone_number": "",
+            "email": "pjcbi@gmail.com",
+            "memo": "번호없음 /\n\n\n\npine7cone9@gmail.com",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "WEI WEN JASON CHONG",
+            "date_of_birth": "1985-01-25",
+            "nationality": "",
+            "phone_number": "",
+            "email": "dfmvd@gmail.com",
+            "memo": "050718115304 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Wu Wan bin",
+            "date_of_birth": "1983-05-17",
+            "nationality": "중국",
+            "phone_number": "86 186 9662 8117",
+            "email": "mbzxx@gmail.com",
+            "memo": "8615505288729 / 중국 1박 / 11일 연박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Francisco Gómez",
+            "date_of_birth": "1988-07-18",
+            "nationality": "",
+            "phone_number": "503 7989 2036",
+            "email": "grqjk@gmail.com",
+            "memo": "8615505288729 / 중국1박 / 연박건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jennie Salaysay",
+            "date_of_birth": "1986-01-15",
+            "nationality": "필리핀",
+            "phone_number": "63 917 621 5950",
+            "email": "iekxx@gmail.com",
+            "memo": "미국1박 / \n+82 10-9495-0394  / \nprc157yv7e@m.expediapartnercentral.com",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Joey Chin",
+            "date_of_birth": "1988-02-25",
+            "nationality": "말레이시아",
+            "phone_number": "60 17-224 9988",
+            "email": "dzmmj@gmail.com",
+            "memo": "인도네시아 1박 /\n62 82122122388 /.\nshellahantii@gmail.com /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Bordin Sawanponrphen",
+            "date_of_birth": "1983-05-16",
+            "nationality": "태국",
+            "phone_number": "66 81 755 4575",
+            "email": "bkfap@gmail.com",
+            "memo": "국적모름 2박\n\n고층 요청\n12LCO 요청시 무료로 제공 바랍니다. (허니문으로 방문)",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Amanda Mazuchi",
+            "date_of_birth": "1986-08-06",
+            "nationality": "싱가포르",
+            "phone_number": "65 11984118582",
+            "email": "ekyqe@gmail.com",
+            "memo": "연락처 모름 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sing Tat Wan",
+            "date_of_birth": "1989-05-06",
+            "nationality": "홍콩",
+            "phone_number": "852 96212365",
+            "email": "fxhqa@gmail.com",
+            "memo": "01077341865 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Brian Chong",
+            "date_of_birth": "1981-05-15",
+            "nationality": "미국",
+            "phone_number": "",
+            "email": "ccpdp@gmail.com",
+            "memo": "0503 5062 7351",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Terrence Lee",
+            "date_of_birth": "1989-04-29",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "onxff@gmail.com",
+            "memo": "+82 10-3399-3201 성인6명 \n\n엑스트라배드1개 추가 원하셔서,3만원 비용 안내 완\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tam Lee Dang Chun",
+            "date_of_birth": "1981-09-21",
+            "nationality": "홍콩",
+            "phone_number": "852 91484387",
+            "email": "sytld@gmail.com",
+            "memo": "010-2965-9877 / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tiong Hui Yeo",
+            "date_of_birth": "1986-08-28",
+            "nationality": "싱가포르",
+            "phone_number": "6598348951",
+            "email": "duulp@gmail.com",
+            "memo": "010-5317-6629 / RB / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "euiseok kim",
+            "date_of_birth": "1983-12-12",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "wsklb@gmail.com",
+            "memo": "050718172252 /\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Lee Seow Yang",
+            "date_of_birth": "1987-09-08",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "hweab@gmail.com",
+            "memo": "0507 1815 6849",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Iris Tan",
+            "date_of_birth": "1980-10-29",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "lwkbn@gmail.com",
+            "memo": "010-6403-1906 / 한국 1박 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Vivian Huang",
+            "date_of_birth": "1986-05-25",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "dxffr@gmail.com",
+            "memo": "050720274586 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "sook foon liew",
+            "date_of_birth": "1982-11-12",
+            "nationality": "싱가포르",
+            "phone_number": "6592740319",
+            "email": "nonbj@gmail.com",
+            "memo": "01077203435 /  cnv0524@daum.net / 한국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Wai Lam Lee",
+            "date_of_birth": "1983-07-19",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "tqucs@gmail.com",
+            "memo": "010-6403-1906 / 한국1박 / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SATOSHI KAWANO",
+            "date_of_birth": "1988-01-19",
+            "nationality": "일본",
+            "phone_number": "",
+            "email": "iated@gmail.com",
+            "memo": "yangnhero@gmail.com / 한국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이지윤",
+            "date_of_birth": "1988-02-02",
+            "nationality": "한국",
+            "phone_number": "010-7355-2855",
+            "email": "emcjh@gmail.com",
+            "memo": "050350565837 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "윤빈이",
+            "date_of_birth": "1987-02-16",
+            "nationality": "한국",
+            "phone_number": "010-2070-8318",
+            "email": "qljfu@gmail.com",
+            "memo": " 86 +8613611775860 / gracexxy96@gmail.com / 중국 3박\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "최라영",
+            "date_of_birth": "1982-04-20",
+            "nationality": "한국",
+            "phone_number": "50350565736",
+            "email": "xhhfb@gmail.com",
+            "memo": "중국 /86-18811115868 \n\n본2에서 본4로 룸업글.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "장창훈",
+            "date_of_birth": "1986-10-28",
+            "nationality": "한국",
+            "phone_number": "50701728429",
+            "email": "xuael@gmail.com",
+            "memo": "미국 1박 /\n1 +8613923423842 / \nsophialiu19840405@gmail.com / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "히로시 아사나리",
+            "date_of_birth": "1984-09-25",
+            "nationality": "한국",
+            "phone_number": "010-2788-1076",
+            "email": "xkaub@gmail.com",
+            "memo": "010-4517-8148 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "MING HEI WU",
+            "date_of_birth": "1982-06-07",
+            "nationality": "",
+            "phone_number": "86 20 3327 7839",
+            "email": "ljcqg@gmail.com",
+            "memo": "010-9432-5791 / FS / RB / 한국 1박 \n\n특이사항: RB도 추가",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Lois Mak",
+            "date_of_birth": "1982-11-17",
+            "nationality": "",
+            "phone_number": "86 189 3247 6485",
+            "email": "ukgok@gmail.com",
+            "memo": "+852 6292 9537 / 홍콩 2박 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Dianne Choi-Ko",
+            "date_of_birth": "1981-02-19",
+            "nationality": "미국",
+            "phone_number": "1 510-387-3338",
+            "email": "tnqsy@gmail.com",
+            "memo": "0-01097227613 / 미국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "NOBUO SUGIMOTO",
+            "date_of_birth": "1987-12-19",
+            "nationality": "",
+            "phone_number": "",
+            "email": "parpw@gmail.com",
+            "memo": "010-4535-4461 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SU YOONG LIM",
+            "date_of_birth": "1983-08-03",
+            "nationality": "",
+            "phone_number": "",
+            "email": "rselb@gmail.com",
+            "memo": "+86 188 0948 2131 / 3명 친구\n중국 1박/ 위챗 /Qian wang 으로 저장되어있습니다.\n\n여권 스캔 및 객실 안내 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "WAI WAH VANESSA PANG",
+            "date_of_birth": "1986-07-08",
+            "nationality": "",
+            "phone_number": "",
+            "email": "ivqkt@gmail.com",
+            "memo": "이메일: joey_yee_88@hotmail.com / 말레이시아 1박\n\n5일 체크아웃 후 신401로 룸무브",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "HWEE PHENG ONG",
+            "date_of_birth": "1982-01-21",
+            "nationality": "",
+            "phone_number": "",
+            "email": "itcjx@gmail.com",
+            "memo": "+66 0817554575 / 왓츠앱 /  태국 3박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Siu Wing Shek",
+            "date_of_birth": "1985-05-18",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "ofhey@gmail.com",
+            "memo": "+86 186 9662 8117 / 중국 1박\n\n체크인 하시는 대표자분 성함이 Wu Wan bin 이라고합니다.\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "YUKARI NAGAFUJI",
+            "date_of_birth": "1988-01-24",
+            "nationality": "일본",
+            "phone_number": "81 09072296586",
+            "email": "hjpqz@gmail.com",
+            "memo": "050350905238 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "ching heung tam",
+            "date_of_birth": "1988-11-17",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "gejro@gmail.com",
+            "memo": "010-7355-2855 / wldbsdl992@naver.com /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Chong Chi Mochael Chan",
+            "date_of_birth": "1984-05-11",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "obbhb@gmail.com",
+            "memo": "+852 800 931 187 / 홍콩 4박 / 전체청소 7\n\n3/19 왓츠앱 미사용자\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ricky Ling Fung Sung",
+            "date_of_birth": "1981-05-23",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "rriti@gmail.com",
+            "memo": "+1 213-604-1337 / 미국 7박 / 전체청소 8\n와츠앱통해서 사전안내문 전송완\n\n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Zhenwei Lin",
+            "date_of_birth": "1984-03-26",
+            "nationality": "싱가포르",
+            "phone_number": "65 98775497",
+            "email": "nuvbr@gmail.com",
+            "memo": "0-6281238888238 / 미국 4박 / 전체청소 10 / \n와츠앱 미사용자",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "catherine vo",
+            "date_of_birth": "1981-01-16",
+            "nationality": "미국",
+            "phone_number": "1 9722619362",
+            "email": "mxrnm@gmail.com",
+            "memo": "65 9111 7206 왓츠앱 / 싱가폴 4박 / 전체청소 10 / \n\n3/20 사전안내문 전송 완료\n레스토랑, 카페, 당일 여행등 많은 정보 있으니 언제든지 연락 달라고 하였으나 당장은 필요 없다고 말씀하시고 객실 사진보여주시며 본인이 예약한 객실 타입이 맞는지 다시 한번 확인 해달라고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "i le chung",
+            "date_of_birth": "1987-07-07",
+            "nationality": "대만",
+            "phone_number": "",
+            "email": "wrpvy@gmail.com",
+            "memo": "+60 12-313 1075  / 국적모름6박 / 전체청소 11, 14 /\n3/18 와츠앱으로  사전안내문 전송 완\n\n3/18 남이섬이나 DMZ 투어를 할수있냐고 문의해주셔서, 남이섬 투어의 경우 저희가 도와드릴 수 있고 택시도 예약도 도와드리겠다고 말씀드리고, 정확한 디테일 원하시는 거 같아서 가격이랑 세세하게 안내 도와드림. ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Allison Chung",
+            "date_of_birth": "1981-05-23",
+            "nationality": "미국",
+            "phone_number": "",
+            "email": "aevgn@gmail.com",
+            "memo": "싱가폴 7박 /  전체 8, 11/\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Nathalia Soetedjo",
+            "date_of_birth": "1983-11-27",
+            "nationality": "미국",
+            "phone_number": "1 8187263869",
+            "email": "yphfn@gmail.com",
+            "memo": "태국 4박 / +66 81 915 0399 / 전체청소6 / \n\n3/21 와츠앱으로 사전안내문 전송 완\n\n일행 한명 추가 총 10명",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Gwendolynne Ser Hwee Goo",
+            "date_of_birth": "1982-12-30",
+            "nationality": "싱가포르",
+            "phone_number": "6597212001",
+            "email": "avfsm@gmail.com",
+            "memo": "국적모름5박/ 명동점 쿠폰1\n\n백오피스 캐리어 3개 보관중",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SZE YAN SZETO",
+            "date_of_birth": "1985-01-29",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "wmbds@gmail.com",
+            "memo": "왓츠앱 / 호주 4박 / 전체청소 9\n\n3/18 왓츠앱 통해 사전안내문 전송 완료.\n\n3/18 호텔투숙하는게 너무 기대된다고 하셔서, 저희도 너무 기대된다고 뭐 좋아하시는지 한식레스토랑,패션샵,디저트레스토랑 아니면 필요하신거 꼭 알려달라고 너무 추천해드리고싶은 샵이 있다고 말씀드리니, 우리의 첫 한국여행인데 가장 멋진 한국 궁중음식 방문 원한다고 하셔서, \n제가 한국에서 가장 멋진 궁중 음식 레스토랑 안내도와드리겠다고 말씀드리고,\n룸하고 홀 가격 각각 안내도와드리고 '한국의집' 언급해드리니, 와우 너무 좋아보인다고 같이 가는 일행들하고 얘기 좀만 더해보고 결정해서 얘기해주겠다고 다시한번 너무고맙다고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "How Ai Ping",
+            "date_of_birth": "1986-12-02",
+            "nationality": "싱가포르",
+            "phone_number": "65 86069839",
+            "email": "suprd@gmail.com",
+            "memo": "+65 8681 6309 / 싱가폴 4박 / 전체청소 12일\n\n\n3/21 와츠앱통해서 사전 안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "How Ai Ping",
+            "date_of_birth": "1987-03-01",
+            "nationality": "싱가포르",
+            "phone_number": "65 86069839",
+            "email": "cnfxn@gmail.com",
+            "memo": "국적 모름 / 연락처 없음 / 전체청소 9",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Keiko Sato",
+            "date_of_birth": "1981-07-29",
+            "nationality": "일본",
+            "phone_number": "",
+            "email": "tgkbr@gmail.com",
+            "memo": "왓츠앱 / 홍콩 3박\n\n3/22 왓츠앱으로 사전 안내문 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Diyana Sinuza",
+            "date_of_birth": "1989-09-15",
+            "nationality": "싱가포르",
+            "phone_number": "65 9090 4426",
+            "email": "iuemz@gmail.com",
+            "memo": "왓츠앱/ +1 321-258-2170/ 미국3박 \n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "최다영",
+            "date_of_birth": "1988-01-27",
+            "nationality": "한국",
+            "phone_number": "010-4098-2780",
+            "email": "ozebc@gmail.com",
+            "memo": "66 0865505677 / 태국4박 /  전체청소 11 / \n\n3/21 와츠앱 통하여 사전안내문 전송 완. 전자레인지 객실에 있는지 문의 주셔서 있다고 답함.\n\n3/23 아기의자 세팅요망",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "강다윤",
+            "date_of_birth": "1985-06-06",
+            "nationality": "한국",
+            "phone_number": "010-7191-9049",
+            "email": "gnqcc@gmail.com",
+            "memo": "1 3146064144 / 미국8박 / 전체청소9일,13일\n\n와츠앱 통해서 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "한주희",
+            "date_of_birth": "1988-06-10",
+            "nationality": "한국",
+            "phone_number": "010-6205-7283",
+            "email": "sprzp@gmail.com",
+            "memo": "010-5858-3653 / RB / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "장고은",
+            "date_of_birth": "1985-12-25",
+            "nationality": "한국",
+            "phone_number": "50701703136",
+            "email": "ueupx@gmail.com",
+            "memo": "+66 99 414 2356 라인 / 태국 3박 / \n\n3/30 라인 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ho Man Chow",
+            "date_of_birth": "1983-11-10",
+            "nationality": "",
+            "phone_number": "",
+            "email": "cties@gmail.com",
+            "memo": "FS / 010-4234-1192 /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "NGA NG",
+            "date_of_birth": "1982-01-15",
+            "nationality": "",
+            "phone_number": "",
+            "email": "sbcym@gmail.com",
+            "memo": "왓츠앱 / 국적모름 4박 / 전체청소 7\n\n3/13 왓츠앱 통해 공항밴 예약해달라고 하여 예약폼 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "yu jen WANG",
+            "date_of_birth": "1988-03-06",
+            "nationality": "",
+            "phone_number": "",
+            "email": "plgvs@gmail.com",
+            "memo": "국적모름 2박\n\n백오피스 짐 3개 보관중",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Mike Sunu",
+            "date_of_birth": "1981-07-24",
+            "nationality": "",
+            "phone_number": "1 630-728-0516",
+            "email": "tsnvk@gmail.com",
+            "memo": "RB / 010-3105-0259 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Takara Kubota",
+            "date_of_birth": "1981-03-27",
+            "nationality": "일본",
+            "phone_number": "0-09078110446",
+            "email": "woyfo@gmail.com",
+            "memo": "+66 84 222 1950 / 태국2박 \n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Hsin-Yi Kao",
+            "date_of_birth": "1989-11-17",
+            "nationality": "미국",
+            "phone_number": "1 626-417-9175",
+            "email": "yzctg@gmail.com",
+            "memo": "왓츠앱 / 국적모름3박/ 신세계쿠폰1\n\n3/5 왓츠앱 통해 사전안내문 전송 완료.\n3/19 4/5 아침 생일 케이크 요청. 금액 안내 완료.\n3/20 케이크 어떤 맛으로 하실건지 컨택중 ---> 초콜렛 2호",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "ARAI MAO",
+            "date_of_birth": "1987-10-07",
+            "nationality": "일본",
+            "phone_number": "81 08011241418",
+            "email": "bxviw@gmail.com",
+            "memo": "852-98036255/ 국적모름3박/ 신세계 쿠폰1\n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Siu Wing Shek",
+            "date_of_birth": "1986-11-17",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "uhlwz@gmail.com",
+            "memo": "60-107789665\n국적모름2박/ 신세계 쿠폰1\n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Hiu Chi Rachel Chao",
+            "date_of_birth": "1984-10-27",
+            "nationality": "홍콩",
+            "phone_number": "852 97806778",
+            "email": "gtjme@gmail.com",
+            "memo": "60-126785007\n국적모름2박/ 신세계 쿠폰1",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Shun Fong Jenly Fong",
+            "date_of_birth": "1985-09-03",
+            "nationality": "홍콩",
+            "phone_number": "852 97806778",
+            "email": "ikitc@gmail.com",
+            "memo": " +55 85 98551-8880 / 브라질 6박 /  전체 12 /\n\n3/18 와츠앱 통하여 사전안내문 전송 완\n\n3/18 택시타고 공항에서 호텔까지 가격이 어떻게 되냐고 여쭤봐주셔서, 현금,카드 가격 각각 안내도와드리고 원한다면 우리쪽에서 택시 예약해줄수있으니까 언제든 편하게 연락하라고 전달도와드림. 그리고 다른 음식점이나  패션샵 안내 도와드리고 싶다고 말씀드리니, KPOP 콘서트를 4월에 보고싶다고 하셔서, 4월에는 KPOP콘서트 예정이 없는데 혹시 뮤지컬 추천해주고싶은데  어떠냐고 여쭤보니까 좋다고 해서,  <이솝이야기> >넥스트 투 노멀> 추천 해드림.\n3/19 이름이 들어간 도장 파고싶다고 하셔서 현재 소통중\n3/27 명동까지 공항밴 원하셔서 예약, 75호9040",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SATOSHI NAITO",
+            "date_of_birth": "1986-02-04",
+            "nationality": "일본",
+            "phone_number": "",
+            "email": "xfusi@gmail.com",
+            "memo": "010-6524-5310\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Hiu Sing Chung",
+            "date_of_birth": "1985-09-13",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "dnuah@gmail.com",
+            "memo": "국적모름 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SIU MAN TING",
+            "date_of_birth": "1988-05-21",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "ehxgb@gmail.com",
+            "memo": "LJ840911@yahoo.com  / 호주 5박 / 전체청소 8일 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Pinyadar Salinvarradar",
+            "date_of_birth": "1988-07-25",
+            "nationality": "태국",
+            "phone_number": "66 0989554641",
+            "email": "zxlvb@gmail.com",
+            "memo": "63 09337203272 / 필리핀 3박 / \n본202 하고 일행 \n\n3/9 와츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Michelle Chiang",
+            "date_of_birth": "1981-04-19",
+            "nationality": "싱가포르",
+            "phone_number": "65 98222256",
+            "email": "lkglb@gmail.com",
+            "memo": "010-4148-3855 / 본2 >> 본4 룸업글\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kamarul Azran Bin Ashari",
+            "date_of_birth": "1981-03-22",
+            "nationality": "싱가포르 ",
+            "phone_number": "",
+            "email": "yacav@gmail.com",
+            "memo": "010-8079-1070 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "seung sup nam",
+            "date_of_birth": "1989-07-25",
+            "nationality": "한국 ",
+            "phone_number": "010-5669-0303",
+            "email": "artfi@gmail.com",
+            "memo": "0507 1816 0189",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "LEE MINYOUNG",
+            "date_of_birth": "1980-10-13",
+            "nationality": "한국 ",
+            "phone_number": "010-9203-0339",
+            "email": "lrhjc@gmail.com",
+            "memo": "010-9246-6694 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "승훈 한",
+            "date_of_birth": "1980-09-21",
+            "nationality": "한국 ",
+            "phone_number": "010-4029-7665",
+            "email": "hxmhv@gmail.com",
+            "memo": "010-9031-2113",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "TOSHIE OTA",
+            "date_of_birth": "1985-03-13",
+            "nationality": "일본",
+            "phone_number": "81-9011722397",
+            "email": "nfwsj@gmail.com",
+            "memo": "번호모름 / 국적불명 2박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Hyung-min Ryu",
+            "date_of_birth": "1980-03-19",
+            "nationality": "한국",
+            "phone_number": "010-3934-4774",
+            "email": "ocyke@gmail.com",
+            "memo": "+62 817-9190-077 / 인도네시아 2박\n\n8일 체크아웃 후 본202, 본901, 신301로 룸무브\n\n4/2 기사포함 렌트카 문의주셔서 롯데렌트카쪽 확인 및 대략적인 비용 받고 신청 원하시면 이메일로 문의주시면 된다고 하셔서 이메일 주소 까지 받은 후 고객님께 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "",
+            "date_of_birth": "1982-10-02",
+            "nationality": "",
+            "phone_number": "",
+            "email": "mvrjx@gmail.com",
+            "memo": "62 08179190077 / 인도네시아 3박 / \n\n3/30 왓츠앱으로 사전안내문 전송 완\n\n본 202, 901과 일행",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "chia- wei Tseng",
+            "date_of_birth": "1987-04-07",
+            "nationality": "대만",
+            "phone_number": "886 933652567",
+            "email": "uymqk@gmail.com",
+            "memo": "62 08179190077 / 인도네시아 3박 / \n\n3/30 왓츠앱으로 사전안내문 전송 완\n\n신301, 본 202와 일행",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "HYEYUN KIM",
+            "date_of_birth": "1984-03-17",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "hvfpz@gmail.com",
+            "memo": "62 08179190077 / 인도네시아3박  \n Stacysandrato@hotmail.com\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "rinka sato",
+            "date_of_birth": "1988-07-21",
+            "nationality": "일본",
+            "phone_number": "81 08038658883",
+            "email": "okuhv@gmail.com",
+            "memo": "polly11920@gmail.com / 홍콩2박 /   3/14 안내문 이메일 전송완 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tang Soak Yun",
+            "date_of_birth": "1985-04-07",
+            "nationality": "말레이시아 ",
+            "phone_number": "60 0162029744",
+            "email": "kxgti@gmail.com",
+            "memo": "010-5598-9491 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "YEE LO YUEN",
+            "date_of_birth": "1987-06-30",
+            "nationality": "홍콩 ",
+            "phone_number": "",
+            "email": "nseho@gmail.com",
+            "memo": "+81 16466836904 / 일본 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tong Janic Yan Yu",
+            "date_of_birth": "1982-10-10",
+            "nationality": "홍콩",
+            "phone_number": "52 9833 2469",
+            "email": "ykfdo@gmail.com",
+            "memo": "바이더씨 요청 4인 스파예약 ---> 6인 스파로 변경 by 우곤팀장님 / 추후 결제 예정 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "CHUN KIT CHAN",
+            "date_of_birth": "1987-08-31",
+            "nationality": "중국",
+            "phone_number": "852-55435864",
+            "email": "etwkm@gmail.com",
+            "memo": "",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kristi Quinones",
+            "date_of_birth": "1986-11-19",
+            "nationality": "중국 ",
+            "phone_number": "86 20 8391 1000",
+            "email": "tsruh@gmail.com",
+            "memo": "jeffwong282@gmail.com / 홍콩 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sooho Yang",
+            "date_of_birth": "1989-05-21",
+            "nationality": "미국",
+            "phone_number": "82 10-9495-0394",
+            "email": "glgdf@gmail.com",
+            "memo": "+65 92984629 / lhernwei@gmail.com / 싱가포르 2박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "임주현",
+            "date_of_birth": "1981-12-17",
+            "nationality": "한국",
+            "phone_number": "010-7730-4113",
+            "email": "kskni@gmail.com",
+            "memo": "말레이시아2박  / joey_yee_88@hotmail.com\n\n본601에서 룸무브하는 건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "박정빈",
+            "date_of_birth": "1980-12-08",
+            "nationality": "한국",
+            "phone_number": "010-3600-4982",
+            "email": "wydve@gmail.com",
+            "memo": "010-2633-6109 / cobbler_@naver.com ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "손재원",
+            "date_of_birth": "1981-02-06",
+            "nationality": "한국",
+            "phone_number": "50718033250",
+            "email": "gyylz@gmail.com",
+            "memo": "이준열\n010-9479-7139\n본부장님 예약건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "rinka sato",
+            "date_of_birth": "1988-06-26",
+            "nationality": "일본",
+            "phone_number": "81 08038658883",
+            "email": "zuwnf@gmail.com",
+            "memo": "60 +19-9666 669/ 말레이시아3박\n\n3/28 왓츠앱 미사용자",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "",
+            "date_of_birth": "1983-01-27",
+            "nationality": "",
+            "phone_number": "",
+            "email": "kejgm@gmail.com",
+            "memo": "852-61130919 / 홍콩 4박 / 전체청소 7일 / 왓츠앱 사전안내문 전송완 / \n\n\n\n3/25 아이들과 함께 투숙할 예정이시며 맵지 않은 음식 추천 해달라고 하셔서 설렁탕(미성옥), 고깃집 (왕비집 명동본점), 한정식 (광화문 설가온), 까페(카페온화, 낙원역) 팥빙수 (설빙) 안내 해드림\n\n3/29 왕비집명동점 7시 4인 예약 원하셨으나 웨이팅으로만 가능한것 확인하여 고객님께 웨이팅없이 드시고 싶다고하시면 5시 30분 전에 오시면 가능하다고 알려드림\n\n4/1 물건 주문하셔서 배송 올 예정. 체크인때 전달 바랍니다. -> 아직 택배 도착하지 않음. 체크인때 손님과 확인 부탁드립니다.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "choi seockhun",
+            "date_of_birth": "1981-12-06",
+            "nationality": "한국",
+            "phone_number": "010-7720-3435",
+            "email": "sldrj@gmail.com",
+            "memo": "86-18515983823 / 말레이시아 1박 / 가족 6명 (성인 3명, 아이 3명) / 전체청소 5\n\n별502 연박건\n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Janica Chan",
+            "date_of_birth": "1985-03-01",
+            "nationality": "태국",
+            "phone_number": "66 +65 97997118",
+            "email": "ogodr@gmail.com",
+            "memo": "국적 모름 / 연락처 없음",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "KYUNG EUN OH",
+            "date_of_birth": "1982-08-13",
+            "nationality": "한국 ",
+            "phone_number": "",
+            "email": "hphbu@gmail.com",
+            "memo": " +62 858-1180-7256 / 인도네시아 3박 / \n\n별403에서 3박 후 별402로 4박예정\n\n*이불 1개 세팅요망* 15,000KRW 체크인시 받아주세요.\n\n3/30 왓츠앱으로 사전안내문 전송 완.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Mei Ping Man",
+            "date_of_birth": "1987-11-14",
+            "nationality": "말레이시아 ",
+            "phone_number": "60167225280",
+            "email": "avwaw@gmail.com",
+            "memo": "+62 858-1180-7256 / 인도네시아 4박 / \n\n별403에서 3박 후 별402로 4박예정(총 7박)\n\n*이불 1개 세팅요망* \n\n3/30 왓츠앱으로 사전안내문 전송 완.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "ng mei kuen",
+            "date_of_birth": "1985-09-27",
+            "nationality": "홍콩 ",
+            "phone_number": "852 94634166",
+            "email": "uiwnu@gmail.com",
+            "memo": "번호없음 /\n\n\n\npine7cone9@gmail.com",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Rosa Estrella",
+            "date_of_birth": "1982-09-16",
+            "nationality": "필리핀 ",
+            "phone_number": "63 917 897 0122",
+            "email": "fznxm@gmail.com",
+            "memo": "050718115304 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "wai yan yuen",
+            "date_of_birth": "1985-05-28",
+            "nationality": "중국",
+            "phone_number": "86 20 8391 1000",
+            "email": "lwzax@gmail.com",
+            "memo": "8615505288729 / 중국 1박 / 11일 연박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "김진아",
+            "date_of_birth": "1985-02-02",
+            "nationality": "한국 ",
+            "phone_number": "010-7372-1323",
+            "email": "slfep@gmail.com",
+            "memo": "8615505288729 / 중국1박 / 연박건",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이유환",
+            "date_of_birth": "1984-12-20",
+            "nationality": "한국",
+            "phone_number": "50720274586",
+            "email": "llukk@gmail.com",
+            "memo": "미국1박 / \n+82 10-9495-0394  / \nprc157yv7e@m.expediapartnercentral.com",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "박세웅",
+            "date_of_birth": "1987-08-12",
+            "nationality": "한국 ",
+            "phone_number": "50350608070",
+            "email": "jnngb@gmail.com",
+            "memo": "인도네시아 1박 /\n62 82122122388 /.\nshellahantii@gmail.com /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "",
+            "date_of_birth": "1987-12-05",
+            "nationality": "",
+            "phone_number": "",
+            "email": "mibrm@gmail.com",
+            "memo": "국적모름 2박\n\n고층 요청\n12LCO 요청시 무료로 제공 바랍니다. (허니문으로 방문)",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Wing Hei Leung",
+            "date_of_birth": "1986-10-09",
+            "nationality": "홍콩 ",
+            "phone_number": "",
+            "email": "awftu@gmail.com",
+            "memo": "연락처 모름 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ma Gillene Obille",
+            "date_of_birth": "1984-05-22",
+            "nationality": "필리핀 ",
+            "phone_number": "",
+            "email": "ribfc@gmail.com",
+            "memo": "01077341865 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "CHUN CHUNG NG",
+            "date_of_birth": "1983-08-10",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "evdjo@gmail.com",
+            "memo": "0503 5062 7351",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Rochelle Indemne",
+            "date_of_birth": "1985-02-13",
+            "nationality": "괌 ",
+            "phone_number": "",
+            "email": "fhjpb@gmail.com",
+            "memo": "+82 10-3399-3201 성인6명 \n\n엑스트라배드1개 추가 원하셔서,3만원 비용 안내 완\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Nathan Wong",
+            "date_of_birth": "1988-08-06",
+            "nationality": "미국",
+            "phone_number": "",
+            "email": "dszsd@gmail.com",
+            "memo": "010-2965-9877 / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kwa Litian",
+            "date_of_birth": "1987-06-21",
+            "nationality": "싱가포르",
+            "phone_number": "",
+            "email": "iljtg@gmail.com",
+            "memo": "010-5317-6629 / RB / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "ISHIHARA AYANO",
+            "date_of_birth": "1984-05-28",
+            "nationality": "일본 ",
+            "phone_number": "",
+            "email": "qvdbc@gmail.com",
+            "memo": "050718172252 /\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Aubrey Guillermo",
+            "date_of_birth": "1987-09-16",
+            "nationality": "필리핀",
+            "phone_number": "",
+            "email": "wcjjf@gmail.com",
+            "memo": "0507 1815 6849",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Carlota Vidal Cantavella",
+            "date_of_birth": "1985-06-15",
+            "nationality": "스페인 ",
+            "phone_number": "",
+            "email": "zdelc@gmail.com",
+            "memo": "010-6403-1906 / 한국 1박 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Karena Goh",
+            "date_of_birth": "1986-02-09",
+            "nationality": "호주 ",
+            "phone_number": "61 447 074 525",
+            "email": "prnec@gmail.com",
+            "memo": "050720274586 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Hagene Lee",
+            "date_of_birth": "1981-04-10",
+            "nationality": "미국 ",
+            "phone_number": "1 315-254-9595",
+            "email": "fehjc@gmail.com",
+            "memo": "01077203435 /  cnv0524@daum.net / 한국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Wei Chang",
+            "date_of_birth": "1985-03-09",
+            "nationality": "미국 ",
+            "phone_number": "1 408-669-8096",
+            "email": "phqsp@gmail.com",
+            "memo": "010-6403-1906 / 한국1박 / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Tiong Hui Yeo",
+            "date_of_birth": "1986-07-01",
+            "nationality": "중국 ",
+            "phone_number": "86 20 8391 1000",
+            "email": "rqldr@gmail.com",
+            "memo": "yangnhero@gmail.com / 한국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이동녕",
+            "date_of_birth": "1980-04-06",
+            "nationality": "한국",
+            "phone_number": "010-6403-1906",
+            "email": "eelul@gmail.com",
+            "memo": "050350565837 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "김애영",
+            "date_of_birth": "1981-01-13",
+            "nationality": "한국",
+            "phone_number": "010-7211-1534",
+            "email": "kczle@gmail.com",
+            "memo": " 86 +8613611775860 / gracexxy96@gmail.com / 중국 3박\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ng Chun Chung",
+            "date_of_birth": "1989-02-14",
+            "nationality": "",
+            "phone_number": "",
+            "email": "wgdyu@gmail.com",
+            "memo": "중국 /86-18811115868 \n\n본2에서 본4로 룸업글.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Min Ahn",
+            "date_of_birth": "1980-10-11",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "eaaex@gmail.com",
+            "memo": "미국 1박 /\n1 +8613923423842 / \nsophialiu19840405@gmail.com / \n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Jason Kok",
+            "date_of_birth": "1982-03-17",
+            "nationality": "말레이시아",
+            "phone_number": "60176688736",
+            "email": "fsane@gmail.com",
+            "memo": "010-4517-8148 / 한국 1박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "",
+            "date_of_birth": "1983-10-15",
+            "nationality": "",
+            "phone_number": "",
+            "email": "kxpie@gmail.com",
+            "memo": "010-9432-5791 / FS / RB / 한국 1박 \n\n특이사항: RB도 추가",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Grace Xu",
+            "date_of_birth": "1984-09-30",
+            "nationality": "중국 ",
+            "phone_number": "8613611775860",
+            "email": "cwava@gmail.com",
+            "memo": "+852 6292 9537 / 홍콩 2박 ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Crystal Lee",
+            "date_of_birth": "1989-07-12",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "jbknz@gmail.com",
+            "memo": "0-01097227613 / 미국1박 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Yu ching Lee",
+            "date_of_birth": "1983-08-28",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "eardb@gmail.com",
+            "memo": "010-4535-4461 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Kwa Litian",
+            "date_of_birth": "1987-05-17",
+            "nationality": "상가포르",
+            "phone_number": "",
+            "email": "ftsxo@gmail.com",
+            "memo": "+86 188 0948 2131 / 3명 친구\n중국 1박/ 위챗 /Qian wang 으로 저장되어있습니다.\n\n여권 스캔 및 객실 안내 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Ching Ki Wong",
+            "date_of_birth": "1986-07-12",
+            "nationality": "홍콩",
+            "phone_number": "",
+            "email": "cgthx@gmail.com",
+            "memo": "이메일: joey_yee_88@hotmail.com / 말레이시아 1박\n\n5일 체크아웃 후 신401로 룸무브",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "YUK YING CHIU",
+            "date_of_birth": "1989-05-13",
+            "nationality": "홍콩 ",
+            "phone_number": "852 39591698",
+            "email": "hales@gmail.com",
+            "memo": "+66 0817554575 / 왓츠앱 /  태국 3박",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sarah Chew",
+            "date_of_birth": "1989-03-22",
+            "nationality": "상가포르",
+            "phone_number": "",
+            "email": "rghps@gmail.com",
+            "memo": "+86 186 9662 8117 / 중국 1박\n\n체크인 하시는 대표자분 성함이 Wu Wan bin 이라고합니다.\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "KyeongMi Kim",
+            "date_of_birth": "1983-11-04",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "zpkty@gmail.com",
+            "memo": "050350905238 / ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "SZU WEI LIU",
+            "date_of_birth": "1981-07-30",
+            "nationality": "미국",
+            "phone_number": "8613923423842",
+            "email": "bulgi@gmail.com",
+            "memo": "010-7355-2855 / wldbsdl992@naver.com /",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Y Huh",
+            "date_of_birth": "1988-06-17",
+            "nationality": "미국",
+            "phone_number": "1 213-500-4511",
+            "email": "cfydl@gmail.com",
+            "memo": "+852 800 931 187 / 홍콩 4박 / 전체청소 7\n\n3/19 왓츠앱 미사용자\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Christie Lasko",
+            "date_of_birth": "1980-04-11",
+            "nationality": "미국 ",
+            "phone_number": "1 970-217-9773",
+            "email": "hggmj@gmail.com",
+            "memo": "+1 213-604-1337 / 미국 7박 / 전체청소 8\n와츠앱통해서 사전안내문 전송완\n\n\n\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "준우 박",
+            "date_of_birth": "1983-11-29",
+            "nationality": "한국 ",
+            "phone_number": "010-7696-7107",
+            "email": "hzmws@gmail.com",
+            "memo": "0-6281238888238 / 미국 4박 / 전체청소 10 / \n와츠앱 미사용자",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Mendoza Romylene Carillo",
+            "date_of_birth": "1985-08-31",
+            "nationality": "스페인",
+            "phone_number": "34 610 75 86 57",
+            "email": "ktoje@gmail.com",
+            "memo": "65 9111 7206 왓츠앱 / 싱가폴 4박 / 전체청소 10 / \n\n3/20 사전안내문 전송 완료\n레스토랑, 카페, 당일 여행등 많은 정보 있으니 언제든지 연락 달라고 하였으나 당장은 필요 없다고 말씀하시고 객실 사진보여주시며 본인이 예약한 객실 타입이 맞는지 다시 한번 확인 해달라고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "XINGYING XU",
+            "date_of_birth": "1982-05-29",
+            "nationality": "중국 ",
+            "phone_number": "86-18811115868",
+            "email": "pbuse@gmail.com",
+            "memo": "+60 12-313 1075  / 국적모름6박 / 전체청소 11, 14 /\n3/18 와츠앱으로  사전안내문 전송 완\n\n3/18 남이섬이나 DMZ 투어를 할수있냐고 문의해주셔서, 남이섬 투어의 경우 저희가 도와드릴 수 있고 택시도 예약도 도와드리겠다고 말씀드리고, 정확한 디테일 원하시는 거 같아서 가격이랑 세세하게 안내 도와드림. ",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "개발자",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sing Hwee Ng",
+            "date_of_birth": "1984-11-18",
+            "nationality": "싱가포르 ",
+            "phone_number": "65-97994123",
+            "email": "egpun@gmail.com",
+            "memo": "싱가폴 7박 /  전체 8, 11/\n",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Eri Iida",
+            "date_of_birth": "1988-01-13",
+            "nationality": "일본",
+            "phone_number": "81 90-2179-9785",
+            "email": "lctek@gmail.com",
+            "memo": "태국 4박 / +66 81 915 0399 / 전체청소6 / \n\n3/21 와츠앱으로 사전안내문 전송 완\n\n일행 한명 추가 총 10명",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "유수환",
+            "date_of_birth": "1985-05-31",
+            "nationality": "한국 ",
+            "phone_number": "010-8702-4312",
+            "email": "hjkgh@gmail.com",
+            "memo": "국적모름5박/ 명동점 쿠폰1\n\n백오피스 캐리어 3개 보관중",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "이소진",
+            "date_of_birth": "1988-05-29",
+            "nationality": "한국 ",
+            "phone_number": "010-4508-6256",
+            "email": "huhnj@gmail.com",
+            "memo": "왓츠앱 / 호주 4박 / 전체청소 9\n\n3/18 왓츠앱 통해 사전안내문 전송 완료.\n\n3/18 호텔투숙하는게 너무 기대된다고 하셔서, 저희도 너무 기대된다고 뭐 좋아하시는지 한식레스토랑,패션샵,디저트레스토랑 아니면 필요하신거 꼭 알려달라고 너무 추천해드리고싶은 샵이 있다고 말씀드리니, 우리의 첫 한국여행인데 가장 멋진 한국 궁중음식 방문 원한다고 하셔서, \n제가 한국에서 가장 멋진 궁중 음식 레스토랑 안내도와드리겠다고 말씀드리고,\n룸하고 홀 가격 각각 안내도와드리고 '한국의집' 언급해드리니, 와우 너무 좋아보인다고 같이 가는 일행들하고 얘기 좀만 더해보고 결정해서 얘기해주겠다고 다시한번 너무고맙다고 하심.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "김기주",
+            "date_of_birth": "1988-10-14",
+            "nationality": "한국",
+            "phone_number": "010-3575-4715",
+            "email": "kqkgg@gmail.com",
+            "memo": "+65 8681 6309 / 싱가폴 4박 / 전체청소 12일\n\n\n3/21 와츠앱통해서 사전 안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "정지연",
+            "date_of_birth": "1984-11-22",
+            "nationality": "한국",
+            "phone_number": "50350565837",
+            "email": "pjwen@gmail.com",
+            "memo": "국적 모름 / 연락처 없음 / 전체청소 9",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "영화감독",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "",
+            "date_of_birth": "1980-08-14",
+            "nationality": "",
+            "phone_number": "",
+            "email": "xsqgz@gmail.com",
+            "memo": "왓츠앱 / 홍콩 3박\n\n3/22 왓츠앱으로 사전 안내문 전송 완료.",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "HAIPENG ZHENG",
+            "date_of_birth": "1987-12-23",
+            "nationality": "한국 ",
+            "phone_number": "",
+            "email": "rdvaj@gmail.com",
+            "memo": "왓츠앱/ +1 321-258-2170/ 미국3박 \n\n3/28 왓츠앱으로 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "디자이너",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Cecilia Jusak",
+            "date_of_birth": "1980-03-08",
+            "nationality": "인도네시아",
+            "phone_number": "62 91594175",
+            "email": "yosgi@gmail.com",
+            "memo": "66 0865505677 / 태국4박 /  전체청소 11 / \n\n3/21 와츠앱 통하여 사전안내문 전송 완. 전자레인지 객실에 있는지 문의 주셔서 있다고 답함.\n\n3/23 아기의자 세팅요망",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "요리사",
+            "visit_count": null
+        }
+    },
+    {
+        "model": "core.Guest",
+        "fields": {
+            "guest_name": "Sooyeon Kim",
+            "date_of_birth": "1982-09-07",
+            "nationality": "한국",
+            "phone_number": "",
+            "email": "uwkeg@gmail.com",
+            "memo": "1 3146064144 / 미국8박 / 전체청소9일,13일\n\n와츠앱 통해서 사전안내문 전송 완",
+            "guest_type": "개인",
+            "credit_card_number": "2580-7897-3425-4634",
+            "job": "회사원",
+            "visit_count": null
+        }
+    }
+]
