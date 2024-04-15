@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from rest_framework.response import Response
 from django.db.models import Q
 from datetime import date, datetime
 from rest_framework import generics, status
 from django.core.paginator import Paginator
 from .models import MyeongdongReservation
-from .serializers import MyeongdongReservationSerialzier
+from .serializers import MyeongdongReservationSerializer
 
 
 def Main(request):
@@ -22,19 +23,52 @@ def register(request):
     return render(request, "pages/myeongdong_register.html", context)
 
 
-class ReservationListView(generics.ListCreateAPIView):
+from django.db.models import Q
+from rest_framework import generics
+from django.shortcuts import render
+from .models import MyeongdongReservation
+
+
+class MyeongdongReservationListView(generics.ListCreateAPIView):
     template_name = "pages/myeongdong_reservation.html"
+    serializer_class = MyeongdongReservationSerializer
+
+    def get_queryset(self):
+        queryset = MyeongdongReservation.objects.all()
+
+        # 쿼리 파라미터 받아오기
+        building_location_param = self.request.GET.get("building_location")
+        room_type_param = self.request.GET.get("room_type")
+        guest_name_param = self.request.GET.get("guest_name")
+        platform_name_param = self.request.GET.get("platform_name")
+        # 나머지 쿼리 파라미터들도 유사하게 처리합니다.
+
+        # 필터링
+        if building_location_param:
+            queryset = queryset.filter(building_location=building_location_param)
+        if room_type_param:
+            queryset = queryset.filter(room_type=room_type_param)
+        if guest_name_param:
+            queryset = queryset.filter(guest_name__icontains=guest_name_param)
+        if platform_name_param:
+            queryset = queryset.filter(platform_name=platform_name_param)
+        # 나머지 필터도 유사하게 처리합니다.
+
+        return queryset
 
     def get(self, request):
-        reservations = MyeongdongReservation.objects.all()
+        queryset = self.get_queryset()
+        serializer = MyeongdongReservationSerializer(queryset, many=True)
         return render(
-            request, "pages/myeongdong_reservation.html", {"reservations": reservations}
+            request,
+            "pages/myeongdong_reservation.html",
+            {"reservations": serializer.data},
         )
 
 
-class ReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
+class MyeongdongReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
     template_name = "pages/myeongdong_detail.html"
-    serializer_class = MyeongdongReservationSerialzier
+    serializer_class = MyeongdongReservationSerializer
     queryset = MyeongdongReservation.objects.all()
     lookup_field = "pk"
 
