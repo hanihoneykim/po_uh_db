@@ -41,11 +41,10 @@ class ReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
     def get(self, request, pk):
         reservation = MyeongdongReservation.objects.get(pk=pk)
 
-        # guest_name, phone_number, email 중에서 2개 이상이 같은 예약들을 필터링합니다.
         again_guest = MyeongdongReservation.objects.filter(
-            Q(guest_name=reservation.guest_name)
-            | Q(phone_number=reservation.phone_number)
-            | Q(email=reservation.email)
+            guest_name=reservation.guest_name,
+            phone_number=reservation.phone_number,
+            email=reservation.email,
         ).exclude(
             pk=pk
         )  # 현재 조회중인 예약은 제외합니다.

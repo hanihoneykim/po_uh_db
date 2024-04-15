@@ -118,16 +118,36 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr style="cursor: pointer;" id="againGuest" data-toggle="modal" data-target="#Modal">
-                                                <td style="white-space: nowrap;">Tong Janic Yan Yu</td>
-                                                <td style="white-space: nowrap;">52 9833 2469</td>
-                                                <td style="white-space: nowrap;">2024년 1월 30일</td>
-                                                <td style="white-space: nowrap;">2024년 2월 14일</td>
-                                                <td style="white-space: nowrap;">2024년 2월 16일</td>
-                                                <td style="white-space: nowrap;">홍콩</td>
-                                                <td style="white-space: nowrap;">0</td>
+                                            {% for data in again_guest %}
+                                            <tr style="cursor: pointer;" class="reservation-row" data-toggle="modal" data-target="#Modal"
+                                                data-building="{{ data.building_location }}"
+                                                data-room-type="{{ data.room_type }}"
+                                                data-guest-name="{{ data.guest_name }}"
+                                                data-platform="{{ data.platform_name }}"
+                                                data-reservation-date="{{ data.reservation_date }}"
+                                                data-lead-time="{{ data.lead_time }}"
+                                                data-check-in-date="{{ data.check_in_date }}"
+                                                data-check-out-date="{{ data.check_out_date }}"
+                                                data-length-of-stay="{{ data.length_of_stay }}"
+                                                data-total-room-charge="{{ data.total_room_charge }}"
+                                                data-adr="{{ data.adr }}"
+                                                data-nationality="{{ data.nationality }}"
+                                                data-guest-count="{{ data.guest_count }}"
+                                                data-relationship="{{ data.relationship }}"
+                                                data-is-checked-in="{{ data.is_checked_in }}"
+                                                data-phone-number="{{ data.phone_number }}"
+                                                data-email="{{ data.email }}"
+                                                data-remarks="{{ data.remarks }}"
+                                            >
+                                                <td style="white-space: nowrap;">{{ data.guest_name }}</td>
+                                                <td style="white-space: nowrap;">{{ data.phone_number }}</td>
+                                                <td style="white-space: nowrap;">{{ data.reservation_date}}</td>
+                                                <td style="white-space: nowrap;">{{ data.check_in_date }}</td>
+                                                <td style="white-space: nowrap;">{{ data.check_out_date }}</td>
+                                                <td style="white-space: nowrap;">{{ data.nationality}}</td>
+                                                <td style="white-space: nowrap;">{{ data.email }}</td>
                                             </tr>
-                                        </tbody>
+                                            {% endfor %}
                                     </table>
                                 </div>
                             </div>
@@ -138,37 +158,11 @@
         </div>
     </main>
 
-<!-- jameKim 모달 -->
+<!-- 모달 -->
 <div id="Modal" class="modal fade">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
-            <div class="modal-body">
-                <div style="padding:10px; font-size: 15px;">
-                    <span style="margin-bottom: 30px;">건물: 별관</span><br>
-                    <span class="mb-5">방타입: 패밀리 스위트</span><br>
-                    <span class="mb-5">예약자 성함: Tong Janic Yan Yu</span><br>
-                    <span class="mb-5">플랫폼: 아고다</span><br>
-                    <span class="mb-5">예약날짜: 2024년 1월 30일</span><br>
-                    <span class="mb-5">리드타임: -79.0</span><br>
-                    <span class="mb-5">체크인: 2024년 2월 14일</span><br>
-                    <span class="mb-5">체크아웃: 2024년 2월 26일</span><br>
-                    <span class="mb-5">숙박일: 2일</span><br>
-                    <span class="mb-5">숙박비: 1865840</span><br>
-                    <span class="mb-5">ADR: 3253409</span><br>
-                    <span class="mb-5">국적: 홍콩</span><br>
-                    <span class="mb-5">투숙인원: 2</span><br>
-                    <span class="mb-5">관계: 가족</span><br>
-                    <span class="mb-5">투숙/취소: 투숙</span><br>
-                    <span class="mb-5">연락처: 52 9833 2469</span><br>
-                    <span class="mb-5">이메일: 0</span><br>
-                    <span class="mb-5">비고:</span><br>
-                    <span class="mb-5">연락처: +46 737212197 / 스웨덴 8박 / 전체청소 1, 5 / 라이터 1개 대여 / 이불 1개 추가 15,000원 결제 필요 / 티오더 스낵 서비스 나초 세트 체크아웃시 결제요망 (10,000원)</span><br>
-                    <span class="mb-5">4/3 히노끼 카드 결제 완료.</span><br>
-                    <span class="mb-5">3/4 왓츠앱 통해 사전안내문 전송 완료. /2명 부부 /</span><br>
-                    <span class="mb-5">3/30 플라워 카드 완</span><br>
-                    <span class="mb-5">3/31 투숙하는 동안 계획있으시면 오늘 계획에 일부만이라도 추천도와드리겠다고 여쭤보았으나, 무시하심.</span><br>
-                    <span class="mb-5">4/1 한국에서 bbq레스토랑 추천도와드려도 괜찮은지 여쭤보고, 추천 해달라고 하셔서, 한국에서 가장맛있는 bbq 집으로 추천해드리겠다고 말씀드리고, '돈돼지 명동'안내해드림. 그리고 왓츠앱통해서 추천하는 메뉴 사진 보내드리고, 추천메뉴도 같이 안내 해드림. 감사하다고 이모티콘 보내주심.</span><br>
-                </div>
+            <div class="modal-body p-4" id="modalContent">
                 
             </div>
             <div class="modal-footer">
@@ -179,11 +173,46 @@
 </div>
 
 <script>
-    $('#Modal').on('hidden.bs.modal', function (e) {
-        $('body').removeClass('modal-open');
-        $('.modal-backdrop').remove();
-    });
-</script>
+    $(document).ready(function() {
+        // 예약 데이터를 클릭할 때 모달에 표시되도록 이벤트를 추가합니다.
+        $('.reservation-row').on('click', function() {
+            var modal = $('#Modal');
+            var data = $(this).data(); // 클릭된 행의 데이터 가져오기
 
+            // 모달 내부에 데이터 표시
+            var modalContent = `
+                <span style="display: block; margin-bottom: 10px;">건물: ${data.building}</span>
+                <span style="display: block; margin-bottom: 10px;">방타입: ${data.roomType}</span>
+                <span style="display: block; margin-bottom: 10px;">예약자 성함: ${data.guestName}</span>
+                <span style="display: block; margin-bottom: 10px;">플랫폼: ${data.platform}</span>
+                <span style="display: block; margin-bottom: 10px;">예약날짜: ${data.reservationDate}</span>
+                <span style="display: block; margin-bottom: 10px;">리드타임: ${data.leadTime}</span>
+                <span style="display: block; margin-bottom: 10px;">체크인: ${data.checkInDate}</span>
+                <span style="display: block; margin-bottom: 10px;">체크아웃: ${data.checkOutDate}</span>
+                <span style="display: block; margin-bottom: 10px;">숙박일: ${data.lengthOfStay}</span>
+                <span style="display: block; margin-bottom: 10px;">숙박비: ${data.totalRoomCharge}</span>
+                <span style="display: block; margin-bottom: 10px;">ADR: ${data.adr}</span>
+                <span style="display: block; margin-bottom: 10px;">국적: ${data.nationality}</span>
+                <span style="display: block; margin-bottom: 10px;">투숙인원: ${data.guestCount}</span>
+                <span style="display: block; margin-bottom: 10px;">관계: ${data.relationship}</span>
+                <span style="display: block; margin-bottom: 10px;">투숙/취소: ${data.isCheckedIn}</span>
+                <span style="display: block; margin-bottom: 10px;">연락처: ${data.phoneNumber}</span>
+                <span style="display: block; margin-bottom: 10px;">이메일: ${data.email}</span>
+                <span style="display: block; margin-bottom: 10px;">비고: ${data.remarks}</span>
+            `;
+            modal.find('.modal-body').html(modalContent);
+
+            // 모달 열기
+            modal.modal('show');
+        });
+
+        // 모달이 닫힐 때 이전에 열린 모달의 스크롤을 해제하고 배경화면을 제거합니다.
+        $('#Modal').on('hidden.bs.modal', function (e) {
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+        });
+    });
+
+</script>
 
 {% endblock %}
