@@ -7,6 +7,7 @@ from rest_framework import generics, status
 from django.core.paginator import Paginator
 from .models import Guest
 from .serializers import GuestSerializer
+from the_myeongdong.models import MyeongdongReservation
 
 
 def branch(request):
@@ -34,7 +35,37 @@ class GuestListView(generics.ListCreateAPIView):
         job_param = self.request.query_params.get("job", "")
         memo_param = self.request.query_params.get("memo", "")
 
-        # 쿼리셋에 필터를 적용합니다.
+        # 새로운 URL에서 기간을 가져옵니다.
+        start_of_visit_date_param = self.request.query_params.get(
+            "startOfVisitDate", ""
+        )
+        end_of_visit_date_param = self.request.query_params.get("endOfVisitDate", "")
+
+        # 시작일과 종료일이 모두 제공되는 경우에만 예약 데이터를 가져옵니다.
+        if start_of_visit_date_param and end_of_visit_date_param:
+            try:
+                start_date = datetime.strptime(start_of_visit_date_param, "%Y-%m-%d")
+                end_date = datetime.strptime(end_of_visit_date_param, "%Y-%m-%d")
+
+                # 시작일과 종료일 사이에 포함되는 예약 데이터를 가져옵니다.
+                reservations = MyeongdongReservation.objects.filter(
+                    Q(check_in_date__gte=start_date, check_in_date__lte=end_date)
+                    | Q(check_out_date__gte=start_date, check_out_date__lte=end_date)
+                    | Q(check_in_date__lte=start_date, check_out_date__gte=end_date)
+                )
+
+                # 예약 데이터에 연결된 고객명을 가져옵니다.
+                guest_names = reservations.values_list("guest_name", flat=True)
+
+                # 예약 데이터에 연결된 고객명과 파라미터로 받은 값이 일치하는 고객을 필터링합니다.
+                if guest_names:
+                    queryset = queryset.filter(guest_name__in=guest_names)
+
+            except ValueError:
+                # 날짜 형식이 잘못된 경우에 대한 처리
+                pass
+
+        # 그 외의 파라미터에 대한 필터링을 적용합니다.
         if guest_name_param:
             queryset = queryset.filter(guest_name__icontains=guest_name_param)
 

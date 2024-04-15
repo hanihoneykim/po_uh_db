@@ -91,13 +91,13 @@
                         <!-- 인풋 부분 -->
                         <div>
                             <div class="form-floating d-flex">
-                                <input type="text" id="reservationDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
-                                <label for="reservationDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
+                                <input type="text" id="startOfVisitDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
+                                <label for="startOfVisitDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
                                 <span style="font-size: 13px; margin-left: 10px; margin-top: 10px;">부터</span>
                             </div>
                             <div class="form-floating d-flex">
-                                <input type="text" id="reservationDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
-                                <label for="reservationDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
+                                <input type="text" id="endOfVisitDate" class="form-control" style="width: 220px; height: 30px; margin-left: -20px; margin-bottom: 10px;">
+                                <label for="endOfVisitDate" style="margin-left: -25px; font-size: 13px; margin-top: 4px;"><i class="fas fa-sm fa-calendar-days mr-2"></i>YYYY-MM-DD 형식으로 입력해주세요</label>
                                 <span style="font-size: 13px; margin-left: 10px; margin-top: 10px;">까지</span>
                             </div>
                             <input id="guestNameInput" style="width: 220px; height: 30px; margin-bottom: 10px; margin-left: -20px; font-size: 13px;" placeholder="고객명"><br>
@@ -193,6 +193,8 @@
             var nationality = $('#nationalityInput').val();
             var job = $('#jobInput').val();
             var memo = $('#memoInput').val();
+            var startOfVisitDate = $('#startOfVisitDate').val(); // 새로운 변수 추가
+            var endOfVisitDate = $('#endOfVisitDate').val(); // 새로운 변수 추가
 
             // 새로운 URL을 생성합니다.
             var url = '/guest_inquiry?';
@@ -224,6 +226,12 @@
             if (memo !== '') {
                 url += 'memo=' + memo + '&';
             }
+            if (startOfVisitDate !== '') { // 새로운 조건 추가
+                url += 'startOfVisitDate=' + startOfVisitDate + '&';
+            }
+            if (endOfVisitDate !== '') { // 새로운 조건 추가
+                url += 'endOfVisitDate=' + endOfVisitDate + '&';
+            }
 
             // 마지막 '&' 문자 제거
             url = url.slice(0, -1);
@@ -231,6 +239,7 @@
             // 새로운 URL로 이동합니다.
             window.location.href = url;
         });
+
     });
 </script>
 
