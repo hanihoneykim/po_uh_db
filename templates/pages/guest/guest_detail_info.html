@@ -13,12 +13,31 @@
                         <div class="card mb-4 mt-3">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <div>
-                                <i class="fas fa-table me-1"></i>
+                                    <i class="fas fa-table me-1"></i>
                                     고객 정보
                                 </div>
                             </div>
                             <div class="card-body p-4">
-
+                                <div class="row justify-content-center" style="height: 100%;">
+                                    <!-- 첫 번째 칸 -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="row p-3 align-items-center">
+                                            <!-- 첫 번째 칸 내용 -->
+                                            <h5>총 방문 횟수 :</h5>
+                                            <span style="color:green; font-size: 30px; font-weight: bold;">{{ guest.visit_count }}</span>
+                                        </div>
+                                    </div>
+                                    <!-- 세로 선 -->
+                                    <div class="col-md-1 mb-3" style="border-left: 1px solid rgba(0,0,0,0.5); height: 100px;"></div>
+                                    <!-- 두 번째 칸 -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="row p-3 align-items-center">
+                                            <!-- 두 번째 칸 내용 -->
+                                            <h5>가장 많이 방문한 지점 :</h5>
+                                            <span style="color:green; font-size: 25px; font-weight: bold;">THE MYEONGDONG</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -30,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="card-body p-4">
-
+                                <span>{{ guest.memo }}</span>
                             </div>
                         </div>
                         
@@ -69,7 +88,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {% for item in reservations %}
+                                                {% for item in guest_reservations %}
                                                     <tr onclick="window.location='/the-myeongdong/reservations/{{ item.id }}';" style="cursor: pointer;">
                                                         <td style="white-space: nowrap;">{{ item.building_location }}</td>
                                                         <td style="white-space: nowrap;">{{ item.room_type }}</td>

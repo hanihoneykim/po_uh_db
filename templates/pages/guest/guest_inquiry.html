@@ -37,7 +37,7 @@
                                             </thead>
                                             <tbody>
                                                 {% for item in guests %}
-                                                    <tr onclick="window.location='/the-myeongdong/reservations/{{ item.id }}';" style="cursor: pointer;">
+                                                    <tr onclick="window.location='/guest_inquiry/{{ item.id }}';" style="cursor: pointer;">
                                                         <td style="white-space: nowrap;">{{ item.guest_name }}</td>
                                                         <td style="white-space: nowrap;">{{ item.phone_number }}</td>
                                                         <td style="white-space: nowrap;">{{ item.date_of_birth }}</td>
