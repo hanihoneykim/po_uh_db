@@ -9,6 +9,7 @@ from django.core.paginator import Paginator
 from .models import Guest
 from .serializers import GuestSerializer
 from the_myeongdong.models import MyeongdongReservation
+from the_myeongdong.serializers import MyeongdongReservationSerializer
 
 
 def health_check(request):
@@ -154,9 +155,39 @@ class GuestDetailView(generics.RetrieveUpdateDestroyAPIView):
             Q(guest_name=guest.guest_name) | Q(phone_number=guest.phone_number)
         )
 
+        # 포맷팅된 숫자를 guest_reservations_serializer에 추가
+        guest_reservations_data = []
+        for reservation in guest_reservations:
+            formatted_reservation = {
+                "id": reservation.id,
+                "building_location": reservation.building_location,
+                "room_type": reservation.room_type,
+                "guest_name": reservation.guest_name,
+                "platform_name": reservation.platform_name,
+                "reservation_date": reservation.reservation_date,
+                "lead_time": reservation.lead_time,
+                "check_in_date": reservation.check_in_date,
+                "check_out_date": reservation.check_out_date,
+                "length_of_stay": reservation.length_of_stay,
+                "total_room_charge": "{0:,.0f}".format(reservation.total_room_charge),
+                "adr": "{0:,.0f}".format(reservation.adr),
+                "nationality": reservation.nationality,
+                "guest_count": reservation.guest_count,
+                "relationship": reservation.relationship,
+                "is_checked_in": reservation.is_checked_in,
+                "is_minor": reservation.is_minor,
+                "phone_number": reservation.phone_number,
+                "email": reservation.email,
+                "remarks": reservation.remarks,
+            }
+            guest_reservations_data.append(formatted_reservation)
+
         serializer = GuestSerializer(guest)
         return render(
             request,
             "pages/guest/guest_detail_info.html",
-            {"guest": serializer.data, "guest_reservations": guest_reservations},
+            {
+                "guest": serializer.data,
+                "guest_reservations": guest_reservations_data,
+            },
         )

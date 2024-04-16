@@ -91,11 +91,15 @@ class MyeongdongReservationListView(generics.ListCreateAPIView):
     def get(self, request):
         queryset = self.get_queryset()
         serializer = MyeongdongReservationSerializer(queryset, many=True)
+        print(serializer.data)
         return render(
             request,
             "pages/myeongdong_reservation.html",
             {"reservations": serializer.data},
         )
+
+
+from rest_framework.renderers import JSONRenderer
 
 
 class MyeongdongReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -106,6 +110,9 @@ class MyeongdongReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
 
     def get(self, request, pk):
         reservation = MyeongdongReservation.objects.get(pk=pk)
+        serializer = MyeongdongReservationSerializer(
+            reservation
+        )  # 객체를 직렬화합니다.
 
         again_guest = MyeongdongReservation.objects.filter(
             guest_name=reservation.guest_name,
@@ -118,5 +125,5 @@ class MyeongdongReservationDetailView(generics.RetrieveUpdateDestroyAPIView):
         return render(
             request,
             "pages/myeongdong_detail.html",
-            {"reservation": reservation, "again_guest": again_guest},
+            {"reservation": serializer.data, "again_guest": again_guest},
         )
