@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework.response import Response
+from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.db.models import Q
 from datetime import date, datetime
@@ -8,6 +9,10 @@ from django.core.paginator import Paginator
 from .models import Guest
 from .serializers import GuestSerializer
 from the_myeongdong.models import MyeongdongReservation
+
+
+def health_check(request):
+    return HttpResponse(status=200)
 
 
 def branch(request):
