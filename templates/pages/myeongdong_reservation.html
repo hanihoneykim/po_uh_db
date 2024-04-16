@@ -26,6 +26,7 @@
                                         <div class="card-body">
                                             <div class="row" style="width: 100%; height: 30%;">
                                                 <div class="col-md-1"></div>
+                                                <!--
                                                 <div class="col-md-2">
                                                     <div class="dropdown">
                                                         <button class="btn btn-outline-secondary dropdown-toggle" style="width: 100%;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,6 +84,31 @@
                                                             <a class="dropdown-item" href="#">투숙</a>
                                                             <a class="dropdown-item" href="#">취소</a>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            -->
+                                                <div class="col-md-2">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputBuilding" type="text" style="width: 100%; height: 40px;" placeholder="Enter your last name"/>
+                                                        <label for="inputBuilding" style="margin-top: -9px; font-size: 13px; color:gray">본관/신관/별관</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputRoom" type="text" style="width: 100%; height: 40px;" placeholder="Enter your last name"/>
+                                                        <label for="inputRoom" style="margin-top: -9px; font-size: 13px; color:gray">방타입</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputPlatform" type="text" style="width: 100%; height: 40px;" placeholder="Enter your last name"/>
+                                                        <label for="inputPlatform" style="margin-top: -9px; font-size: 13px; color:gray">플랫폼</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-floating">
+                                                        <input class="form-control" id="inputStatus" type="text" style="width: 100%; height: 40px;" placeholder="Enter your last name"/>
+                                                        <label for="inputStatus" style="margin-top: -9px; font-size: 13px; color:gray">투숙/취소/방문전</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-2">
@@ -163,7 +189,7 @@
                                                 <div class="col-md-1"></div>
                                             </div>
                                             <div class="row mt-3 d-flex justify-content-end">
-                                                <button id="searchButton" type="button" class="btn btn-secondary" style="margin-right: 30px; width: 110px;">조회하기</button>
+                                                <button id="searchButton" type="button" class="btn btn-dark" style="margin-right: 30px; width: 110px;">조회하기</button>
                                             </div>
                                         </div>
                                     </div>
@@ -286,57 +312,38 @@
 </script>
 
 <script>
-    // 건물 드롭다운 메뉴
-    $('.dropdown-building-menu').on('click', 'a', function() {
-        var selectedBuilding = $(this).text(); // 클릭한 항목의 텍스트 가져오기
-        $('#dropdownBuildingButton').text(selectedBuilding); // 선택한 항목으로 버튼 텍스트 변경
-    });
-
-    // 방타입 드롭다운 메뉴
-    $('.dropdown-room-menu').on('click', 'a', function() {
-        var selectedRoomType = $(this).text();
-        $('#dropdownRoomButton').text(selectedRoomType);
-    });
-
-    // 플랫폼 드롭다운 메뉴
-    $('.dropdown-platform-menu').on('click', 'a', function() {
-        var selectedPlatform = $(this).text();
-        $('#dropdownPlatformButton').text(selectedPlatform);
-    });
-
-    // 투숙 여부 드롭다운 메뉴
-    $('.dropdown-status-menu').on('click', 'a', function() {
-        var selectedStayStatus = $(this).text();
-        $('#dropdownStatusButton').text(selectedStayStatus);
-    });
-
-
     // 검색 버튼 클릭 이벤트
     $('#searchButton').click(function() {
         // 각 입력 필드의 값들을 가져옵니다.
-        var building = $('#dropdownMenuButton1').text();
-        var roomType = $('#dropdownMenuButton2').text();
-        var platform = $('#dropdownMenuButton3').text();
-        var stayStatus = $('#dropdownMenuButton4').text();
+        var building = $('#inputBuilding').val();
+        var roomType = $('#inputRoom').val();
+        var platform = $('#inputPlatform').val();
+        var stayStatus = $('#inputStatus').val();
         var guestName = $('#inputLastName').val();
         var reservationDate = $('#reservationDate').val();
         var checkInDate = $('#checkInDateSearch').val();
         var checkOutDate = $('#checkOutDateSearch').val();
-        var accommodationFee = $('#inputRate').val().replace(/[^0-9]/g, ''); // 숫자만 가져오도록 변경
+        var totalRoomCharge = $('#inputRate').val().trim();
+        var nationality = $('#inputNationality').val();
+        var guests = $('#inputGuests').val();
+        var relationship = $('#inputRelationship').val();
+        var phoneNumber = $('#inputPhoneNumber').val();
+        var email = $('#inputEmail').val();
+
 
         // URL 생성 및 파라미터 추가
         var url = '/the-myeongdong/reservations?';
         if (building !== '') {
-            url += 'building=' + building + '&';
+            url += 'building_location=' + building + '&';
         }
         if (roomType !== '') {
             url += 'room_type=' + roomType + '&';
         }
         if (platform !== '') {
-            url += 'platform=' + platform + '&';
+            url += 'platform_name=' + platform + '&';
         }
         if (stayStatus !== '') {
-            url += 'stay_status=' + stayStatus + '&';
+            url += 'is_checked_in=' + stayStatus + '&';
         }
         if (guestName !== '') {
             url += 'guest_name=' + guestName + '&';
@@ -350,9 +357,26 @@
         if (checkOutDate !== '') {
             url += 'check_out_date=' + checkOutDate + '&';
         }
-        if (accommodationFee !== '') {
-            url += 'accommodation_fee=' + accommodationFee + '&';
+        if (totalRoomCharge !== '') {
+            totalRoomCharge = totalRoomCharge.replace(/[^0-9]/g, ''); // 숫자만 가져오도록 변경
+            url += 'total_room_charge=' + totalRoomCharge + '&';
         }
+        if (nationality !== '') {
+            url += 'nationality=' + nationality + '&';
+        }
+        if (guests !== '') {
+            url += 'total_room_charge=' + guests + '&';
+        }
+        if (relationship !== '') {
+            url += 'relationship=' + relationship + '&';
+        }
+        if (phoneNumber !== '') {
+            url += 'phoneNumber=' + phoneNumber + '&';
+        }
+        if (email !== '') {
+            url += 'email=' + email + '&';
+        }
+
 
         // 마지막 '&' 문자 제거
         url = url.slice(0, -1);
@@ -360,6 +384,7 @@
         // 새로운 URL로 이동합니다.
         window.location.href = url;
     });
+
 </script>
 
 

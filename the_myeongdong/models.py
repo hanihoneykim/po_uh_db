@@ -42,7 +42,7 @@ class MyeongdongReservation(models.Model):
     check_in_date = models.DateField(null=True, blank=True)
     check_out_date = models.DateField(null=True, blank=True)
     length_of_stay = models.IntegerField(null=True, blank=True)
-    total_room_charge = models.DecimalField(max_digits=10, decimal_places=0)
+    total_room_charge = models.DecimalField(max_digits=10, decimal_places=0, blank=True)
     adr = models.DecimalField(max_digits=10, decimal_places=0)
     nationality = models.CharField(max_length=20, null=True, blank=True)
     guest_count = models.IntegerField(null=True, blank=True)

@@ -6,6 +6,10 @@ from rest_framework import generics, status
 from django.core.paginator import Paginator
 from .models import MyeongdongReservation
 from .serializers import MyeongdongReservationSerializer
+from django.db.models import Q
+from rest_framework import generics
+from django.shortcuts import render
+from .models import MyeongdongReservation
 
 
 def Main(request):
@@ -23,10 +27,9 @@ def register(request):
     return render(request, "pages/myeongdong_register.html", context)
 
 
-from django.db.models import Q
-from rest_framework import generics
-from django.shortcuts import render
-from .models import MyeongdongReservation
+def reservation_status(request):
+    context = {}
+    return render(request, "pages/reservation_status.html", context)
 
 
 class MyeongdongReservationListView(generics.ListCreateAPIView):
@@ -41,7 +44,17 @@ class MyeongdongReservationListView(generics.ListCreateAPIView):
         room_type_param = self.request.GET.get("room_type")
         guest_name_param = self.request.GET.get("guest_name")
         platform_name_param = self.request.GET.get("platform_name")
-        # 나머지 쿼리 파라미터들도 유사하게 처리합니다.
+        is_checked_in_param = self.request.GET.get("is_checked_in")
+        reservation_date_param = self.request.GET.get("reservation_date")
+        check_in_date_param = self.request.GET.get("check_in_datee")
+        check_out_date_param = self.request.GET.get("check_out_date")
+        # total_room_charge_param = self.request.GET.get("total_room_charge")
+        nationality_param = self.request.GET.get("nationality")
+        guest_count_param = self.request.GET.get("guest_count")
+        relationship_param = self.request.GET.get("relationship")
+        is_minor_param = self.request.GET.get("is_minor")
+        phone_number_param = self.request.GET.get("phone_number")
+        email_param = self.request.GET.get("email")
 
         # 필터링
         if building_location_param:
@@ -52,7 +65,26 @@ class MyeongdongReservationListView(generics.ListCreateAPIView):
             queryset = queryset.filter(guest_name__icontains=guest_name_param)
         if platform_name_param:
             queryset = queryset.filter(platform_name=platform_name_param)
-        # 나머지 필터도 유사하게 처리합니다.
+        if is_checked_in_param:
+            queryset = queryset.filter(s_checked_in=is_checked_in_param)
+        if check_in_date_param:
+            queryset = queryset.filter(check_in_date=check_in_date_param)
+        if check_out_date_param:
+            queryset = queryset.filter(check_out_date=check_out_date_param)
+        # if total_room_charge_param and total_room_charge_param.strip():
+        #     queryset = queryset.filter(total_room_charge=total_room_charge_param)
+        if nationality_param:
+            queryset = queryset.filter(nationality=nationality_param)
+        if guest_count_param:
+            queryset = queryset.filter(guest_count=guest_count_param)
+        if relationship_param:
+            queryset = queryset.filter(relationship=relationship_param)
+        if is_minor_param:
+            queryset = queryset.filter(is_minor=is_minor_param)
+        if phone_number_param:
+            queryset = queryset.filter(phone_number=phone_number_param)
+        if email_param:
+            queryset = queryset.filter(email=email_param)
 
         return queryset
 

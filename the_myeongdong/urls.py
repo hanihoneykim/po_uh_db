@@ -9,6 +9,7 @@ urlpatterns = [
         name="reservations",
     ),
     path("reservations/register", views.register, name="register"),
+    path("reservations/status", views.reservation_status, name="status"),
     path(
         "reservations/<str:pk>",
         views.MyeongdongReservationDetailView.as_view(),

@@ -9,8 +9,11 @@
                 <div class="col-md-6">
                     <!-- 첫 번째 카드 -->
                     <div class="card mb-4">
-                        <div class="card-header">
+                        <div class="card-header d-flex justify-content-between">
                             예약 상세보기
+                            <div>
+                                <a href="/the-myeongdong/reservations/register" class="btn btn-secondary" style="margin-right: 10px;" onclick="return false;">예약 수정하기</a>
+                            </div>
                         </div>
                         <div class="card-body row">
                             <div class="col-md-3">
@@ -138,6 +141,7 @@
                                                 data-phone-number="{{ data.phone_number }}"
                                                 data-email="{{ data.email }}"
                                                 data-remarks="{{ data.remarks }}"
+                                                data-id="{{ data.id }}"
                                             >
                                                 <td style="white-space: nowrap;">{{ data.guest_name }}</td>
                                                 <td style="white-space: nowrap;">{{ data.phone_number }}</td>
@@ -166,8 +170,9 @@
                 
             </div>
             <div class="modal-footer">
+                <a href="#" class="btn btn-dark" style="margin-right: 10px;" id="detailsButton">상세 보기</a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
-            </div>
+            </div>            
         </div>
     </div>
 </div>
@@ -202,15 +207,25 @@
             `;
             modal.find('.modal-body').html(modalContent);
 
+            // "상세 보기" 버튼의 href 속성을 설정하여 예약의 ID를 포함한 URL 생성
+            var detailsUrl = "/the-myeongdong/reservations/" + data.id;
+            $('#detailsButton').attr('href', detailsUrl);
+
             // 모달 열기
             modal.modal('show');
         });
 
-        // 모달이 닫힐 때 이전에 열린 모달의 스크롤을 해제하고 배경화면을 제거합니다.
+        // 링크를 클릭했을 때 배경의 뿌연 효과 제거
         $('#Modal').on('hidden.bs.modal', function (e) {
             $('body').removeClass('modal-open');
             $('.modal-backdrop').remove();
         });
+
+        // 뒤로가기를 눌렀을 때 모달 닫기
+        $(window).on('popstate', function() {
+            $('#Modal').modal('hide');
+        });
+
     });
 
 </script>
